@@ -1,14 +1,36 @@
-import './App.css';
-import { Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
+import LandingRoute from './components/landing/LandingRoute';
+import WebProjectsRoute from './components/web-projects/WebProjectsRoute';
+import CppRoute from './components/cpp-projects/CppRoute';
+import SkillsRoute from './components/skills/SkillsRoute';
+import ContactRoute from './components/contact/ContactRoute';
+import NavigationHeader from './common/NavigationHeader';
+import { Container } from 'react-bootstrap';
 
 function App() {
   return (
-    <div >
-      <Routes>
-        
-      </Routes>
+    <div>
+      <NavigationHeader />
+      <Container>
+        <Routes>
+          <Route path='/' element={<LandingRoute />} />
+          <Route path='/web-projects' element={<WebProjectsRoute />} />
+          <Route path='/cpp-projects' element={<CppRoute />} />
+          <Route path='/skills' element={<SkillsRoute />} />
+          <Route path='/contact' element={<ContactRoute />} />
+        </Routes>
+      </Container>
+
+     
     </div>
   );
 }
 
 export default App;
+
+
+/*
+ <Container style={{margin: '7em'}}>
+        
+    </Container>
+*/
