@@ -1,5 +1,5 @@
 import React from "react";
-import "./navigation-header.css";
+import '../../styles/navigation-header.css';
 
 
 export default function NavigationHeader() {

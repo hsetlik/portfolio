@@ -1,6 +1,5 @@
-import ProjectDescription from "../components/common/ProjectDescription"
 
-export interface ProjectDescription {
+export interface ProjectDescriptionProps {
     name: string,
     subtitle?: string,
     description: string,
@@ -8,7 +7,7 @@ export interface ProjectDescription {
     technologies: string[]
 }
 
-export const webProjectDescriptions: ProjectDescription[] = [
+export const webProjectDescriptions: ProjectDescriptionProps[] = [
     {
         name: 'Codex',
         subtitle: 'Full stack web application',

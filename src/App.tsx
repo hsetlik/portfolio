@@ -5,13 +5,12 @@ import CppRoute from './components/cpp-projects/CppRoute';
 import SkillsRoute from './components/skills/SkillsRoute';
 import ContactRoute from './components/contact/ContactRoute';
 import NavigationHeader from './components/common/NavigationHeader';
-import { Container } from 'react-bootstrap';
 
 function App() {
   return (
     <div>
       <NavigationHeader />
-      <Container>
+      <div className='container'>
         <Routes>
           <Route path='/' element={<LandingRoute />} />
           <Route path='/web-projects' element={<WebProjectsRoute />} />
@@ -19,7 +18,8 @@ function App() {
           <Route path='/skills' element={<SkillsRoute />} />
           <Route path='/contact' element={<ContactRoute />} />
         </Routes>
-      </Container>
+      </div>
+      
 
      
     </div>

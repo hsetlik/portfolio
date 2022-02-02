@@ -1,0 +1,23 @@
+h1 {
+    margin: 0.33em;
+    background-color: transparent !important;
+    z-index: 40 !important;
+    color: black !important;
+    opacity: 100%;
+}
+
+
+.container {
+    background-color: transparent !important;
+    z-index: 0;
+}
+
+#tsparticles {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
