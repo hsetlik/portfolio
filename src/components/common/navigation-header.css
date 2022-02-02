@@ -1,0 +1,7 @@
+nav ul li {
+    text-transform: uppercase;
+}
+
+.navbar-nav > li > a.active, .navbar-nav > li > a:hover {
+    border-top: 0.1275rem solid red;
+  }

@@ -4,7 +4,7 @@ import WebProjectsRoute from './components/web-projects/WebProjectsRoute';
 import CppRoute from './components/cpp-projects/CppRoute';
 import SkillsRoute from './components/skills/SkillsRoute';
 import ContactRoute from './components/contact/ContactRoute';
-import NavigationHeader from './common/NavigationHeader';
+import NavigationHeader from './components/common/NavigationHeader';
 import { Container } from 'react-bootstrap';
 
 function App() {
