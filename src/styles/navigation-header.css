@@ -7,11 +7,10 @@ nav ul li {
 }
 
 .navbar-nav > li > a {
-    border-top: 0.1275rem solid var(--primary-dark);
     margin-right: 0.75rem;
     margin-left: 0.75rem;
-  }
+}
 
 .navbar-nav > li > a.active, .navbar-nav > li > a:hover {
-    border-top: 0.1275rem solid rgb(105, 67, 67);
+    border-top: 0;
 }

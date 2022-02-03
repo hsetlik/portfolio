@@ -18,7 +18,11 @@ export default function LandingBackground() {
               }
             },
             color: {
-              value: 'black' 
+              value: {
+                r: 255,
+                g: 214,
+                b: 10
+              } 
             },
             shape: {
               type: "circle",
@@ -46,8 +50,12 @@ export default function LandingBackground() {
             line_linked: {
               enable: true,
               distance: 100,
-              color: "#ffffff",
-              opacity: 1,
+              color: {
+                r: 255,
+                g: 214,
+                b: 10 
+              },
+              opacity: 100,
               width: 1
             },
             move: {

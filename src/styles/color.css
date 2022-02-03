@@ -1,0 +1,29 @@
+
+
+
+:root{
+    --primary-white: rgba(255, 255, 255, 0.911);
+    --primary-black: #000814ff;
+    --primary-dark: #001d3dff;
+    --primary: #003566ff;
+    --secondary-dark: #ffc300ff;
+    --secondary-light: #ffd60aff;
+}
+
+body {
+    color: var(--primary-white) !important;
+    background-color: var(--primary-dark) !important;
+}
+
+.primary-border {
+    border-color: var(--primary-white);
+}
+
+.dark-w-yellow {
+    color: var(--secondary-light) !important;
+    background-color: var(--primary-dark) !important;
+}
+
+.dark-w-yellow:hover {
+    color: var(--primary-white) !important;
+}

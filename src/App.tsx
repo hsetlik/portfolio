@@ -1,4 +1,5 @@
 import "./App.css";
+import "./styles/color.css";
 import { Route, Routes } from 'react-router-dom';
 import LandingRoute from './components/landing/LandingRoute';
 import WebProjectsRoute from './components/web-projects/WebProjectsRoute';
