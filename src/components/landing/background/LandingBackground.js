@@ -4,63 +4,48 @@ import Particles from "react-tsparticles";
 
 export default function LandingBackground() {
 
+
     return (
       <div className="particle-container" >
         <Particles id="tsparticles"
         options={{
           particles: {
             number: {
-              value: 400,
-              limit: 500,
-              density: {
-                enable: true,
-                value_area: 800
-              }
-            },
-            color: {
-              value: {
-                r: 255,
-                g: 214,
-                b: 10
-              } 
+              value: 120,
+              limit: 200
             },
             shape: {
-              type: "circle",
-              stroke: {
-                width: 0,
-                color: "#000000"
-              },
+              enable: true,
+              type: "polygon",
               polygon: {
-                nb_sides: 5
+                nb_sides: 6,
+                fill: true,
               }
             },
-            opacity: {
-              value: 0.5
-            },
-            // size: {
-            //   value: 30,
-            //   random: true,
-            //   anim: {
-            //     enable: true,
-            //     speed: 10,
-            //     size_min: 10,
-            //     sync: false
-            //   }
-            // },
-            line_linked: {
+            size: {
+               random: true,
+               anim: {
+                 enable: true,
+                 speed: 0.5,
+                 size_min: 30,
+                 sync: false
+              }
+             },
+            lineLinked: {
               enable: true,
-              distance: 100,
+              distance: 150,
               color: {
                 r: 255,
                 g: 214,
                 b: 10 
               },
               opacity: 100,
-              width: 1
+              width: 1,
+              frequency: 0.2
             },
             move: {
               enable: true,
-              speed: 3,
+              speed: 1.2,
               direction: "none",
               random: false,
               straight: false,
@@ -71,6 +56,11 @@ export default function LandingBackground() {
           fullScreen: false,
           retina_detect: true,
           fps_limit: 30,
+          backgroundMask: {
+            enable: true,
+            cover: "black",
+            
+          }
         }}
         />
       </div>
