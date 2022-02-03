@@ -3,14 +3,11 @@ import "../../../styles/landing.css";
 import Particles from "react-tsparticles";
 
 export default function LandingBackground() {
+
     return (
-      <div className="container" id='tsparticles'>
-        <Particles className="particles"
+      <div className="particle-container" >
+        <Particles id="tsparticles"
         options={{
-          fullScreen: {
-            enable: true,
-            zIndex: 1
-          },
           particles: {
             number: {
               value: 400,
@@ -21,7 +18,7 @@ export default function LandingBackground() {
               }
             },
             color: {
-              value: "#ffffff"
+              value: 'black' 
             },
             shape: {
               type: "circle",
@@ -36,7 +33,6 @@ export default function LandingBackground() {
             opacity: {
               value: 0.5
             },
-            zIndex: 1,
             // size: {
             //   value: 30,
             //   random: true,
@@ -64,9 +60,9 @@ export default function LandingBackground() {
               bounce: false
             }
           },
+          fullScreen: false,
           retina_detect: true,
           fps_limit: 30,
-          background: {color: "black"}
         }}
         />
       </div>

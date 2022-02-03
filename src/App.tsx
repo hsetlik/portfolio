@@ -1,3 +1,4 @@
+import "./App.css";
 import { Route, Routes } from 'react-router-dom';
 import LandingRoute from './components/landing/LandingRoute';
 import WebProjectsRoute from './components/web-projects/WebProjectsRoute';
@@ -8,9 +9,8 @@ import NavigationHeader from './components/common/NavigationHeader';
 
 function App() {
   return (
-    <div>
+    <>
       <NavigationHeader />
-      <div className='container'>
         <Routes>
           <Route path='/' element={<LandingRoute />} />
           <Route path='/web-projects' element={<WebProjectsRoute />} />
@@ -18,11 +18,7 @@ function App() {
           <Route path='/skills' element={<SkillsRoute />} />
           <Route path='/contact' element={<ContactRoute />} />
         </Routes>
-      </div>
-      
-
-     
-    </div>
+    </>
   );
 }
 

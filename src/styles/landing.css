@@ -1,23 +1,29 @@
 h1 {
     margin: 0.33em;
     background-color: transparent !important;
-    z-index: 40 !important;
-    color: black !important;
+    color: rgb(255, 255, 255) !important;
     opacity: 100%;
-}
-
-
-.container {
-    background-color: transparent !important;
-    z-index: 0;
+    
 }
 
 #tsparticles {
+    padding-left: 0em !important;
+    margin-left: 0em !important;
+    position: absolute;
     width: 100%;
     height: 100%;
     margin: 0;
-    padding: 0;
-    top: 0;
-    left: 0;
-    z-index: 1;
-  }
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.particle-container {
+    position: absolute;
+    padding-left: 0em !important;
+    margin-left: 0em !important;
+    width: 100% !important;
+    height: 100%;
+    left: 0 !important;
+    top: 5em;
+}

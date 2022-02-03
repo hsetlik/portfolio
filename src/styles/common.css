@@ -5,3 +5,8 @@
 .center-column {
     justify-content: center;
 }
+
+
+.fill-parent {
+  margin: 0 !important;
+}
