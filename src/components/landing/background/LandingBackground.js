@@ -9,17 +9,24 @@ export default function LandingBackground() {
       <div className="particle-container" >
         <Particles id="tsparticles"
         options={{
+          background: {
+            enable: true,
+            color: {
+              r: 0,
+              g: 8,
+              b: 20
+            }
+          },
           particles: {
             number: {
               value: 120,
-              limit: 200
+              limit: 200,
             },
-            shape: {
-              enable: true,
-              type: "polygon",
-              polygon: {
-                nb_sides: 6,
-                fill: true,
+            color: {
+              value: {
+                r: 255,
+                g: 214,
+                b: 10 
               }
             },
             size: {
@@ -28,7 +35,6 @@ export default function LandingBackground() {
                  enable: true,
                  speed: 0.5,
                  size_min: 30,
-                 sync: false
               }
              },
             lineLinked: {
@@ -40,8 +46,8 @@ export default function LandingBackground() {
                 b: 10 
               },
               opacity: 100,
-              width: 1,
-              frequency: 0.2
+              width: 1.5,
+              frequency: 0.2,
             },
             move: {
               enable: true,
@@ -55,12 +61,7 @@ export default function LandingBackground() {
           },
           fullScreen: false,
           retina_detect: true,
-          fps_limit: 30,
-          backgroundMask: {
-            enable: true,
-            cover: "black",
-            
-          }
+          fps_limit: 30
         }}
         />
       </div>

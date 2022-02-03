@@ -6,12 +6,13 @@
     --primary-black: #000814ff;
     --primary-dark: #001d3dff;
     --primary: #003566ff;
+    --primary-light: #003566ff; 
     --secondary-dark: #ffc300ff;
     --secondary-light: #ffd60aff;
 }
 
 body {
-    color: var(--primary-white) !important;
+    color: var(--primary-white);
     background-color: var(--primary-dark) !important;
 }
 
