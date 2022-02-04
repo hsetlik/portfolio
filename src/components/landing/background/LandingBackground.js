@@ -6,16 +6,12 @@ export default function LandingBackground() {
 
 
     return (
-      <div className="particle-container" >
+      <div className="particle-container background-image-div" >
         <Particles id="tsparticles"
         options={{
           background: {
             enable: true,
-            color: {
-              r: 0,
-              g: 8,
-              b: 20
-            }
+            color: "green"
           },
           particles: {
             number: {
@@ -57,11 +53,12 @@ export default function LandingBackground() {
               straight: false,
               out_mode: "out",
               bounce: false
-            }
+            },
+            zIndex: 0
           },
           fullScreen: false,
           retina_detect: true,
-          fps_limit: 30
+          fps_limit: 30,
         }}
         />
       </div>

@@ -1,8 +1,9 @@
+
+/* Common elements */
+
 body {
     font-family: "Josefin Sans";
 }
-
-
 
 h1 {
     color: var(--primary-black) !important;
@@ -11,27 +12,29 @@ h1 {
 }
 
 h2 {
-    color: var(--primary-black) !important;
     opacity: 100%;
     text-align: center;
     
 }
 
-p {
-    text-align: left;
+.container {
+    background-color: var(--secondary-dark) !important;
+    
 }
+/* background */
 
 #tsparticles {
     padding-left: 0em !important;
     margin-left: 0em !important;
-    position: absolute;
     width: 100%;
     height: 100%;
     margin: 0;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-image: linear-gradient(
+    z-index: 0 !important;
+    /* filter: blur(3px); */
+}
+
+.background-image-div {
+    background: linear-gradient(
         0deg,
         hsl(211deg 100% 12%) 0%,
         hsl(211deg 90% 15%) 10%,
@@ -44,11 +47,8 @@ p {
         hsl(212deg 58% 40%) 80%,
         hsl(212deg 57% 44%) 90%,
         hsl(212deg 56% 47%) 100%
-        );
-    z-index: 30 !important;
-    filter: blur(3px);
+        ); 
 }
-
 
 .particle-container {
     position: absolute;
@@ -58,40 +58,42 @@ p {
     height: 100%;
     left: 0 !important;
     top: 5em;
-    background-color: var(--secondary-dark) !important; 
     opacity: 100% !important;
     justify-content: center !important;
     align-items: center !important;
     align-content: center !important;
     text-align: center !important;
-    z-index: 39 !important;
+    filter: blur(3px);
 }
+/* Foreground */
 
+#foreground-parent {
+    position: relative;
+
+}
 
 .foreground-div {
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    background-color: var(--secondary-dark) !important;
-    opacity: 100% !important;
-    z-index: 40 !important;
+    position: absolute !important;
+    align-items: flex-start;
+    z-index: 2 !important;
+    padding: 1em;
+    margin: 2em !important;
+    background-color: transparent !important;
 }
 
+
 .particle-foreground {
+    position: relative;
     align-self: flex-start !important;
+    text-align: left;
     font-family: "Bebas Neue";
-    z-index: 42;
+    z-index: 1 !important;
+    width: fit-content;
+    background-color: var(--secondary-dark);
+    padding: 1em;
 }
 
 .outlined {
     color: transparent !important;
     -webkit-text-stroke: black 0.025em;
 }
-
-
-
-
-
-
-
-
