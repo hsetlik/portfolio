@@ -3,22 +3,25 @@
 
 body {
     font-family: "Josefin Sans";
+    color: var(--primary-black) !important;
 }
 
 h1 {
-    color: var(--primary-black) !important;
     opacity: 100%;
-    text-align: center;
+    text-align: left;
+    font-family: "Bebas Neue";
+    font-size: 4em;
 }
 
 h2 {
     opacity: 100%;
-    text-align: center;
+    text-align: left;
     
 }
 
 .container {
     background-color: var(--secondary-dark) !important;
+    margin: 1em;
     
 }
 /* background */
@@ -59,10 +62,6 @@ h2 {
     left: 0 !important;
     top: 5em;
     opacity: 100% !important;
-    justify-content: center !important;
-    align-items: center !important;
-    align-content: center !important;
-    text-align: center !important;
     filter: blur(3px);
 }
 /* Foreground */
@@ -72,21 +71,11 @@ h2 {
 
 }
 
-.foreground-div {
-    position: absolute !important;
-    align-items: flex-start;
-    z-index: 2 !important;
-    padding: 1em;
-    margin: 2em !important;
-    background-color: transparent !important;
-}
-
 
 .particle-foreground {
     position: relative;
     align-self: flex-start !important;
     text-align: left;
-    font-family: "Bebas Neue";
     z-index: 1 !important;
     width: fit-content;
     background-color: var(--secondary-dark);
@@ -96,4 +85,27 @@ h2 {
 .outlined {
     color: transparent !important;
     -webkit-text-stroke: black 0.025em;
+}
+
+/*FLEXBOX STUFF*/
+
+.col {
+    width: fit-content !important;
+}
+
+#wide-col {
+    flex-grow: 8;
+}
+
+/* #narrow-col {
+    flex-grow: 2;
+   
+} */
+
+/*IMAGE STUFF*/
+
+.self-img {
+    border-radius: 50%;
+    width: 8em;
+    
 }

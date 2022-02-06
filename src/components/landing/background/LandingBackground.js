@@ -9,14 +9,10 @@ export default function LandingBackground() {
       <div className="particle-container background-image-div" >
         <Particles id="tsparticles"
         options={{
-          background: {
-            enable: true,
-            color: "green"
-          },
           particles: {
             number: {
               value: 120,
-              limit: 200,
+              limit: 120,
             },
             color: {
               value: {
@@ -30,20 +26,21 @@ export default function LandingBackground() {
                anim: {
                  enable: true,
                  speed: 0.5,
-                 size_min: 30,
-              }
+                 size_min: 30
+              },
+              
              },
             lineLinked: {
               enable: true,
-              distance: 150,
+              distance: 130,
               color: {
                 r: 255,
                 g: 214,
                 b: 10 
               },
               opacity: 100,
-              width: 1.5,
-              frequency: 0.2,
+              width: 2,
+              frequency: 0.18,
             },
             move: {
               enable: true,

@@ -25,9 +25,3 @@ function App() {
 
 export default App;
 
-
-/*
- <Container style={{margin: '7em'}}>
-        
-    </Container>
-*/

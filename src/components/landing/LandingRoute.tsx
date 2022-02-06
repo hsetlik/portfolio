@@ -6,13 +6,9 @@ import LandingForeground from "./LandingForeground";
 
 export default function LandingRoute() {
     return(
-        <div >
-            <div className="container ">
-                <LandingForeground />
-            </div>
-            <div className="container">
-                <LandingBackground />
-            </div>
+        <div>
+            <LandingForeground />
+            <LandingBackground />
         </div>
     )
 }
