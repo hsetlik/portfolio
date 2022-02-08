@@ -1,19 +1,34 @@
 
 body {
-    background-image: url(../assets/swiss-timelapse.gif) !important;
-    /* backdrop-filter: brightness(60%) blur(3px); */
+    background-image: url("../assets/riga-timelapse-loop.gif");
+}
+
+h1 {
+    align-self: center !important;
+}
+
+p {
+    align-self: center !important;
 }
 
 .background-gif {
     align-content: center !important;
     justify-content: center !important;
-    height: 100% !important;
+    vertical-align: auto;
 }
 
 .container {
     display: flex;
     flex-direction: column; 
     padding: 1em;
+    justify-content: center !important;
+    background-color: transparent !important;
+    backdrop-filter: blur(4px);
+}
+
+.landing-text {
+    color: white !important;
+    text-shadow: 0.85px 4px 3px rgb(0, 0, 0);
     
 }
 

@@ -9,15 +9,15 @@ interface Props {
 export default function LandingPage({handleEnter}: Props) {
     return (
         <div className="container background-gif">
-           
-                <div>
+                <div className="container landing-text" >
                     <h1>Hayden Setlik</h1>
                     <p>Full stack web development</p>
                     <p>C++ Audio Programming</p>
+                    <button onClick={handleEnter} className="enter-btn">
+                        Enter
+                    </button>
                 </div>
-                <button onClick={handleEnter} className="enter-btn">
-                    Enter
-                </button>
+               
         </div>
     )
 
