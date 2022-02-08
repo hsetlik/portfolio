@@ -1,5 +1,5 @@
 import React from "react";
-import "../../../styles/landing.css";
+import "../../../styles/about.css";
 import Particles from "react-tsparticles";
 
 export default function LandingBackground() {

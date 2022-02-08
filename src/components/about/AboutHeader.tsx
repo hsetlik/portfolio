@@ -1,10 +1,9 @@
 import React from "react";
-import "../../styles/landing.css";
+import "../../styles/about.css";
 import self from "../../assets/self.png";
 
-export default function LandingHeader() {
+export default function AboutHeader() {
     return (
-        <div className="container particle-foreground">
             <div className="row">
                 <div className="col" id="wide-col">
                     <h1 className='outlined'>Hi. I'm Hayden Setlik.</h1>
@@ -14,8 +13,6 @@ export default function LandingHeader() {
                     <img src={self} className="self-img" />
                 </div>
             </div>
-            
-        </div>
     )
 }
 

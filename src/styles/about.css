@@ -68,16 +68,13 @@ h2 {
 
 #foreground-parent {
     position: relative;
-
 }
 
 
 .particle-foreground {
     position: relative;
-    align-self: flex-start !important;
     text-align: left;
     z-index: 1 !important;
-    width: fit-content;
     background-color: var(--secondary-dark);
     padding: 1em;
 }
@@ -92,16 +89,6 @@ h2 {
 .col {
     width: fit-content !important;
 }
-
-#wide-col {
-    flex-grow: 8;
-}
-
-/* #narrow-col {
-    flex-grow: 2;
-   
-} */
-
 /*IMAGE STUFF*/
 
 .self-img {
