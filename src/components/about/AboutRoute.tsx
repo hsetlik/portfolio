@@ -2,12 +2,12 @@ import React from "react";
 import "../../styles/about.css";
 import "../../styles/color.css";
 import AboutBackground from "./background/AboutBackground";
-import LandingForeground from "./AboutForeground";
+import AboutForeground from "./AboutForeground";
 
-export default function LandingRoute() {
+export default function AboutRoute() {
     return(
         <div>
-            <LandingForeground />
+            <AboutForeground />
             <AboutBackground />
         </div>
     )

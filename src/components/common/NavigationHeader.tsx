@@ -11,7 +11,7 @@ export default function NavigationHeader() {
             <div className="container-fluid" >
                 <ul className="navbar-nav" >
                     <li className='nav-item'>
-                        <a className="nav-link dark-w-yellow" href="/">About</a>
+                        <a className="nav-link dark-w-yellow" href="/about">About</a>
                     </li>
                     <li className='nav-item'>
                         <a className="nav-link dark-w-yellow" href="/web-projects">Web Projects</a>

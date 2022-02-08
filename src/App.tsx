@@ -1,22 +1,30 @@
 import "./App.css";
 import "./styles/color.css";
-import { Route, Routes } from 'react-router-dom';
-import LandingRoute from './components/about/AboutRoute';
+import { Route, Routes, useLocation, useNavigate } from 'react-router-dom';
+import AboutRoute from './components/about/AboutRoute';
 import WebProjectsRoute from './components/web-projects/WebProjectsRoute';
 import CppRoute from './components/cpp-projects/CppRoute';
 import SkillsRoute from './components/skills/SkillsRoute';
 import ContactRoute from './components/contact/ContactRoute';
 import NavigationHeader from './components/common/NavigationHeader';
 import { useState } from "react";
+import LandingPage from "./components/landing/LandingRoute";
 
 function App() {
-  const [entered, setEntered] = useState(false);
-  const handleEnter = () => setEntered(true);
+  
+  const navigate = useNavigate();
+  const location = useLocation();
+  console.log(`Location is: ${location.pathname}`);
+  const entered = location.pathname !== "/";
+  const handleEnter = () => {
+    navigate("/about");
+  }
   return (
     <>
-        <NavigationHeader />
+        {entered && <NavigationHeader />}
         <Routes>
-          <Route path='/' element={<LandingRoute />} />
+          <Route path='/' element={<LandingPage handleEnter={handleEnter} />} />
+          <Route path='/about' element={<AboutRoute />} />
           <Route path='/web-projects' element={<WebProjectsRoute />} />
           <Route path='/cpp-projects' element={<CppRoute />} />
           <Route path='/skills' element={<SkillsRoute />} />
