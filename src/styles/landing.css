@@ -17,7 +17,7 @@ p {
     vertical-align: auto;
 }
 
-.container {
+.landing-container {
     display: flex;
     flex-direction: column; 
     padding: 1em;

@@ -14,3 +14,8 @@ nav ul li {
 .navbar-nav > li > a.active, .navbar-nav > li > a:hover {
     border-top: 0;
 }
+
+
+.active-link {
+    color: white !important;
+}

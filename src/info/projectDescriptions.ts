@@ -13,12 +13,12 @@ export const webProjectDescriptions: ProjectDescriptionProps[] = [
         subtitle: 'Full stack web application',
         description: 'A language learning app based on real-world written and video material',
         github: 'https://github.com/hsetlik/Codex',
-        technologies: ['Entity Framework' ]
+        technologies: ['Entity Framework', '.NET 5.0', 'SQL Server','React', 'node.js', 'Bootstrap 5' ]
     },
     {
-        name: 'CssScraper',
+        name: 'Css Scraper',
         subtitle: 'NuGet Package',
-        description: 'fasdfasdf',
+        description: "An open-source NuGet package for retreiving and parsing data from a web page's external stylesheets",
         github: 'https://github.com/hsetlik/CssScraper',
         technologies: []
     },
@@ -27,7 +27,7 @@ export const webProjectDescriptions: ProjectDescriptionProps[] = [
         subtitle: 'React App',
         description: 'A language learning app based on real-world written and video material',
         github: 'https://github.com/hsetlik/Codex',
-        technologies: ['TypeScript', 'bootstrap']
+        technologies: ['TypeScript', 'React', 'Bootstrap 5']
     }
 ]
 

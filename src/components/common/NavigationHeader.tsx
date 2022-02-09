@@ -1,29 +1,29 @@
 import React from "react";
 import '../../styles/color.css';
 import '../../styles/navigation-header.css';
+import NavLink from "./NavLink";
 
 
 export default function NavigationHeader() {
 
-   
   return (
     <nav className="navbar navbar-expand-sm navbar-dark bg-dark dark-w-yellow">
             <div className="container-fluid" >
                 <ul className="navbar-nav" >
                     <li className='nav-item'>
-                        <a className="nav-link dark-w-yellow" href="/about">About</a>
+                        <NavLink className="nav-link dark-w-yellow" href="/about" text="About" />
                     </li>
                     <li className='nav-item'>
-                        <a className="nav-link dark-w-yellow" href="/web-projects">Web Projects</a>
+                        <NavLink className="nav-link dark-w-yellow" href="/web-projects" text="Web Projects" />
                     </li>
                     <li className='nav-item'>
-                        <a className="nav-link dark-w-yellow dark-w-yellow" href="/cpp-projects">C++ Projects</a>
+                        <NavLink className="nav-link dark-w-yellow" href="/cpp-projects" text="C++ Projects" />
                     </li>
                     <li className='nav-item'>
-                        <a className="nav-link dark-w-yellow" href="/skills">Skills</a>
+                        <NavLink className="nav-link dark-w-yellow" href="/skills" text="Skills" />
                     </li>
                     <li className='nav-item'>
-                        <a className="nav-link dark-w-yellow" href="/contact">Contact</a>
+                        <NavLink className="nav-link dark-w-yellow" href="/contact" text="Contact" />
                     </li>
                 </ul>
             </div>

@@ -4,6 +4,7 @@
 body {
     font-family: "Josefin Sans";
     color: var(--primary-black) !important;
+
 }
 
 h1 {
@@ -16,13 +17,11 @@ h1 {
 h2 {
     opacity: 100%;
     text-align: left;
-    
 }
 
 .container {
     background-color: var(--secondary-dark) !important;
     margin: 1em;
-    
 }
 /* background */
 
@@ -69,7 +68,6 @@ h2 {
 #foreground-parent {
     position: relative;
 }
-
 
 .particle-foreground {
     position: relative;
