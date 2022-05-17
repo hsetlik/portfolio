@@ -21,7 +21,7 @@ h2 {
 
 .container {
     background-color: var(--secondary-dark) !important;
-    margin: 1em;
+    margin: 1em !important;
 }
 /* background */
 
@@ -73,8 +73,9 @@ h2 {
     position: relative;
     text-align: left;
     z-index: 1 !important;
-    background-color: var(--secondary-dark);
+    background-color: transparent !important;
     padding: 1em;
+    padding: 0.75em;
 }
 
 .outlined {
@@ -83,14 +84,29 @@ h2 {
 }
 
 /*FLEXBOX STUFF*/
-
-.col {
-    width: fit-content !important;
+.row {
+    justify-content: space-around !important;
 }
+
+
+.col > h1 {
+    width: max-content !important;
+    font-size: 75pt;
+}
+
+
 /*IMAGE STUFF*/
 
 .self-img {
     border-radius: 50%;
     width: 8em;
-    
+    padding: 1em;
+}
+
+p {
+    padding: 1.5em;
+}
+
+.btn {
+    margin: 1em;
 }

@@ -11,10 +11,8 @@ import { useState } from "react";
 import LandingPage from "./components/landing/LandingRoute";
 
 function App() {
-  
   const navigate = useNavigate();
   const location = useLocation();
-  console.log(`Location is: ${location.pathname}`);
   const entered = location.pathname !== "/";
   const handleEnter = () => {
     navigate("/about");
