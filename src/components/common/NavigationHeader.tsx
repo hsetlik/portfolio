@@ -13,11 +13,9 @@ export default function NavigationHeader() {
                     <li className='nav-item'>
                         <NavLink className="nav-link dark-w-yellow" href="/about" text="About" />
                     </li>
+
                     <li className='nav-item'>
-                        <NavLink className="nav-link dark-w-yellow" href="/web-projects" text="Web Projects" />
-                    </li>
-                    <li className='nav-item'>
-                        <NavLink className="nav-link dark-w-yellow" href="/cpp-projects" text="C++ Projects" />
+                        <NavLink className="nav-link dark-w-yellow" href="/projects" text="My Work" />
                     </li>
                     <li className='nav-item'>
                         <NavLink className="nav-link dark-w-yellow" href="/skills" text="Skills" />

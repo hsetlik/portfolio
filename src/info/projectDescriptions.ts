@@ -1,4 +1,5 @@
 
+//TODO: each project description needs a background image URL as a prop
 export interface ProjectDescriptionProps {
     name: string,
     subtitle?: string,
@@ -7,7 +8,7 @@ export interface ProjectDescriptionProps {
     technologies: string[]
 }
 
-export const webProjectDescriptions: ProjectDescriptionProps[] = [
+export const projectDescriptions: ProjectDescriptionProps[] = [
     {
         name: 'Codex',
         subtitle: 'Full stack web application',
@@ -28,6 +29,20 @@ export const webProjectDescriptions: ProjectDescriptionProps[] = [
         description: 'A language learning app based on real-world written and video material',
         github: 'https://github.com/hsetlik/Codex',
         technologies: ['TypeScript', 'React', 'Bootstrap 5']
+    },
+    {
+        name: 'Octane',
+        subtitle: 'Audio Plugin',
+        description: 'A powerful wavetable synthesizer in a VST plugin format',
+        github: 'https://github/hsetlik/Octane',
+        technologies: ['JUCE Framework', 'OpenGL']
+    },
+    {
+        name: 'Ultra64',
+        subtitle: 'Embedded C++',
+        description: 'A hardware step sequencer based on an ESP32 microcontroller',
+        github: 'https://github/hsetlik/Octane',
+        technologies: ['PlatformIO', 'I2C and SPI protocols']
     }
 ]
 
