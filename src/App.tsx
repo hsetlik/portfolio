@@ -1,4 +1,5 @@
 import "./App.css";
+import ProjectsRoute from "./components/projects/ProjectsRoute";
 import { Route, Routes, useLocation, useNavigate } from 'react-router-dom';
 
 
@@ -13,6 +14,7 @@ function App() {
     <>
       <h1>Main about page</h1>
         <Routes>
+          <Route path="/" element={ProjectsRoute}></Route>
 
         </Routes>
     </>
