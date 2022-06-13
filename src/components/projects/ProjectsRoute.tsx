@@ -1,4 +1,5 @@
 import React from "react";
+import "../../styles/projects.css";
 import GridModeSelect from "../common/GridModeSelect";
 import ProjectGrid from "./ProjectGrid";
 
