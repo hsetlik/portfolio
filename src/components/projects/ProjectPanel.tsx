@@ -9,7 +9,7 @@ interface ProjPanelProps {
 
 export default function ProjectPanel({name, subhead}: ProjPanelProps) {
     return (
-        <div className="row">
+        <div className="project-panel">
             <h3>{name}</h3>
             <p>{subhead}</p>
         </div>

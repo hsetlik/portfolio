@@ -9,9 +9,12 @@ export interface ProjectInfo {
     desc: string,
     tags: string[],
     githubUrl: string,
-    image?: string,
     viewMode: GridViewMode,
-    languages: string[]
+    languages: string[],
+    // Optional stuff for modal detail component
+    image?: string,
+    technologies?: string[],
+    longDesc?: string
 }
 
 const codex: ProjectInfo = {
@@ -43,7 +46,7 @@ const hex: ProjectInfo = {
 
 const cssScraper: ProjectInfo = {
     name: "CSS Scraper",
-    desc: "NuGet package for parsing and editing CSS",
+    desc: "C# package for parsing and editing CSS",
     tags: ['Dotnet'],
     githubUrl: '/CssScraper',
     viewMode: GridViewMode.Web,
@@ -62,16 +65,28 @@ export const ultra64: ProjectInfo = {
 export const ltSpicePath: ProjectInfo = {
     name: "After Effects circuit path creator",
     desc: "After Effects ScriptUI panel for converting SPICE circuit simulations to vector paths",
-    tags: ['Embedded'],
+    tags: [],
     githubUrl: '/After-Effects-LT-Spice-Path-Creator',
     viewMode: GridViewMode.Web,
     languages: ['JavaScript']
 }
+
+export const arbitraryFunctionGen: ProjectInfo = {
+    name: "Arbitrary Function Generator",
+    desc: "ESP32-based signal generator for testing and calibrating analog circuits",
+    tags: ['Embedded'],
+    githubUrl: '/After-Effects-LT-Spice-Path-Creator',
+    viewMode: GridViewMode.CPP,
+    languages: ['C++']
+}
+
+
 export const allProjects: ProjectInfo[] = [
     codex,
     octane,
     hex,
     cssScraper,
-    ultra64,
-    ltSpicePath
+    ltSpicePath,
+    arbitraryFunctionGen,
+    ultra64
 ]
