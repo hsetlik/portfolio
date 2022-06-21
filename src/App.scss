@@ -1,13 +1,6 @@
+@import './scss/config';
 
-@font-face {
-  font-family: 'Josefin Sans';
-  src: local('Josefin Sans'), url("./fonts/Josefin_Sans/JosefinSans-VariableFont_wght.ttf") format('opentype');
-}
-
-@font-face {
-  font-family: 'Bebas Neue';
-  src: local('Bebas Neue'), url("./fonts/Bebas_Neue/BebasNeue-Regular.ttf") format('opentype');
-}
+@import 'bootstrap/scss/bootstrap';
 
 .App {
     text-align: center;

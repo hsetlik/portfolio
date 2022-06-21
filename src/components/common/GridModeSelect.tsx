@@ -1,3 +1,4 @@
+import { runInAction } from "mobx";
 import { observer } from "mobx-react-lite";
 import React from "react";
 import { GridViewMode } from "../../app/projectInfo";
@@ -7,7 +8,9 @@ export default observer(function GridModeSelect(){
 
     const {projectGridStore} = useStore();
     const setViewMode = (mode: GridViewMode) => {
-        projectGridStore.viewMode = mode;
+        runInAction(() => {
+            projectGridStore.viewMode = mode;
+        })
     } 
 
     return (
