@@ -1,5 +1,6 @@
 div {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
 }
 
 h1 {
@@ -15,6 +16,10 @@ h1 {
     padding: 1ch;
 }
 
-.project-panel {
-    padding: 0.5em;
+.has-bg-img {
+    padding: 1em;
+    opacity: 85%;
+    background-color: var(--oxfordblue);
+    backdrop-filter: brightness(20%) blur(10px);
+    background-blend-mode: multiply
 }

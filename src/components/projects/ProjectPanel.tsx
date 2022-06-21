@@ -5,7 +5,11 @@ export default function ProjectPanel({name, desc, image}: ProjectInfo) {
     let _style: React.CSSProperties = {};
     if (image) {
         console.log('Image at: ' + image);
-        _style = {backgroundImage: `url(${image})`};
+        _style = {
+            backgroundImage: `url(${image})`,
+            backgroundSize: 'cover',
+            backgroundColor: 'var(--bluesapphire)'
+    };
     }
     return (
         <div className={_className} style={_style}>
