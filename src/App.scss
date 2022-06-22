@@ -3,6 +3,11 @@
 @import 'bootstrap/scss/bootstrap';
 .App {
     text-align: center;
+    height: 100%;
+  }
+
+  body {
+    height: 100%;
   }
   
   .App-logo {

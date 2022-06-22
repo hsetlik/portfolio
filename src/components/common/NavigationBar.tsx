@@ -1,12 +1,10 @@
 import { observer } from "mobx-react-lite";
 import React from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-import { useStore } from "../../app/store";
 import "../../styles/nav.css";
 
 export default observer(function NavigationBar() {
     const nav = useNavigate();
-    const {projectGridStore} = useStore();
     const loc = useLocation();
     const suffixA = loc.pathname === "/" ? " selected" : "";
     const suffixB = loc.pathname === "/skills" ? " selected" : "";

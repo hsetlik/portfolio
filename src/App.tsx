@@ -1,29 +1,30 @@
 import "./App.scss";
 import ProjectsRoute from "./components/projects/ProjectsRoute";
-import { Route, Routes, useLocation, useNavigate } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import NavigationBar from "./components/common/NavigationBar";
 import SkillsRoute from "./components/skills/SkillsRoute";
 import ContactRoute from "./components/contact/ContactRoute";
+import ModalContainer from "./components/projects/ModalContainer";
 
 
 function App() {
-  const navigate = useNavigate();
-  const location = useLocation();
-  const entered = location.pathname !== "/";
-  const handleEnter = () => {
-    navigate("/about");
-  }
+  
   return (
+  <>
+    <ModalContainer />
     <>
-      <h1 className="text-center">Main about page</h1>
+    <div className="bg-dark vh-100">
       <NavigationBar />
+      <div className="container-fluid bg-dark">
         <Routes>
           <Route path="/" element={<ProjectsRoute />}></Route>
           <Route path="/skills" element={<SkillsRoute />}/>
           <Route path="/contact" element={<ContactRoute />}/>
-
         </Routes>
+      </div>
+    </div>
     </>
+  </>
   );
 }
 
