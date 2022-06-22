@@ -18,6 +18,7 @@ h1 {
 
 .has-bg-img {
     padding: 1em;
+    margin: 0.5em;
     opacity: 85%;
     background-color: var(--oxfordblue);
     backdrop-filter: brightness(20%) blur(10px);

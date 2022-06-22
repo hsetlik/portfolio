@@ -24,7 +24,7 @@ const codex: ProjectInfo = {
     githubUrl: '/codex',
     viewMode: GridViewMode.Web,
     languages: ['C#', 'TypeScript'],
-    image: '/img/web-project-images/CodexScreenshot1.png'
+    image: 'img/web-project-images/codex-screenshot.png'
 }
 
 const octane: ProjectInfo = {
@@ -54,7 +54,7 @@ const cssScraper: ProjectInfo = {
     githubUrl: '/CssScraper',
     viewMode: GridViewMode.Web,
     languages: ['C#'],
-    image:'/web-project-images/css-scraper-screenshot.png'
+    image:'/img/web-project-images/css-scraper-screenshot.png'
 }
 
 //TODO: get nice photo for this
@@ -64,7 +64,8 @@ export const ultra64: ProjectInfo = {
     tags: ['Embedded'],
     githubUrl: '/ultraSixtyFour',
     viewMode: GridViewMode.CPP,
-    languages: ['C++']
+    languages: ['C++'],
+    image: '/img/cpp-project-images/ultra64-photo.png'
 }
 
 export const ltSpicePath: ProjectInfo = {
@@ -74,7 +75,7 @@ export const ltSpicePath: ProjectInfo = {
     githubUrl: '/After-Effects-LT-Spice-Path-Creator',
     viewMode: GridViewMode.Web,
     languages: ['JavaScript'],
-    image: '/img/web-project-images/path-creator-screenshot'
+    image: '/img/web-project-images/path-creator-screenshot.png'
 }
 
 export const arbitraryFunctionGen: ProjectInfo = {
@@ -83,7 +84,8 @@ export const arbitraryFunctionGen: ProjectInfo = {
     tags: ['Embedded'],
     githubUrl: '/ArbitraryFunctionGen',
     viewMode: GridViewMode.CPP,
-    languages: ['C++']
+    languages: ['C++'],
+    image: '/img/cpp-project-images/function-gen-photo.png'
 }
 
 
