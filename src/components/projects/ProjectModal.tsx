@@ -17,14 +17,13 @@ export default function ProjectModal ({name}: Props) {
         <div className="modal-content bg-dark">
             {project && (
                 <div >
-                    <Modal.Header>
+                    <h3>
                         {project.name}
-                    </Modal.Header>
+                    </h3>
                     <p>{project.desc}</p>
                     {project.longDesc && (
                         <p className="long-desc">{project.longDesc}</p>
                     )}
-
                 </div>
             )}
         </div>
