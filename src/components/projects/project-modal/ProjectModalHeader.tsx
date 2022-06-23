@@ -7,10 +7,14 @@ interface Props {
 
 export default function ProjectModalHeader({name}: Props) {
     const project = getProject(name); 
+    const style: React.CSSProperties = {
+        backgroundImage: `url(${project?.image})`,
+        backgroundSize: 'cover',
+    }
     return (
         <>
             {project && (
-                <div className="row">
+                <div className="row has-bg-img header-bg" style={style}>
                     <h3>{project.name}</h3>
                     <p className="short-desc">{project.desc}</p>
                     <p className="platform-header">{`Platform: ${project.platform}`}</p>
