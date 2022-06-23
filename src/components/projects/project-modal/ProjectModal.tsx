@@ -1,6 +1,7 @@
 import React from "react";
-import { allProjects } from "../../app/projectInfo";
-import "../../styles/modal.css"
+import { getProject } from "../../../app/projectInfo";
+import "../../../styles/modal.css";
+import ProjectModalHeader from "./ProjectModalHeader";
 interface Props {
     name: string
 }
@@ -10,22 +11,15 @@ interface Props {
 */
 
 export default function ProjectModal({ name }: Props) {
-    const project = allProjects.find(proj => proj.name === name);
+    const project = getProject(name);
     console.log(`Modal for: ${project?.name} is open`);
     return (
         <div className="container-fluid modal-content bg-dark">
             {project && (
                 <div className="container" >
-                    <h3 className="row">
-                        {project.name}
-                    </h3>
+                    <ProjectModalHeader name={name} />
                     <div className="row">
-
                         <div className="col">
-                            <p>{project.desc}</p>
-                        </div>
-                        <div className="col">
-                            <p className="platform-header">{`Platform: ${project.platform}`}</p>
                             {project.technologies && (
                                 <div>
                                     <h5>Technologies:</h5>

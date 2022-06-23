@@ -1,7 +1,7 @@
 import React from "react";
 import { ProjectInfo } from "../../app/projectInfo";
 import { useStore } from "../../app/store";
-import ProjectModal from "./ProjectModal";
+import ProjectModal from "./project-modal/ProjectModal";
 export default function ProjectPanel({name, desc, image}: ProjectInfo) {
     let _className = 'project-panel' + (image) ? ' has-bg-img' : '';
     let _style: React.CSSProperties = {};
