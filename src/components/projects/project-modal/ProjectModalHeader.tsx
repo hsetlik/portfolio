@@ -14,7 +14,8 @@ export default function ProjectModalHeader({name}: Props) {
     return (
         <>
             {project && (
-                <div className="row has-bg-img header-bg" style={style}>
+                <div className="row has-bg-img header-bg">
+                    <img className="bg-img" src={project.image} alt={project.name}></img>
                     <h3>{project.name}</h3>
                     <p className="short-desc">{project.desc}</p>
                     <p className="platform-header">{`Platform: ${project.platform}`}</p>
