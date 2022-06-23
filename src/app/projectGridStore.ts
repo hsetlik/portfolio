@@ -1,5 +1,4 @@
 import {makeAutoObservable} from 'mobx';
-import ProjectGrid from '../components/projects/ProjectGrid';
 import { allProjects, GridViewMode, ProjectInfo } from './projectInfo';
 
 

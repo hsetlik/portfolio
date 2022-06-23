@@ -9,7 +9,7 @@ export default observer(function ModalContainer() {
     return (
         <Modal show={modalStore.component.open} onHide={modalStore.closeModal}>
            {modalStore.component.content !== null && (
-            <Modal.Body className="bg-dark">
+            <Modal.Body className="bg-dark modal-body">
                 {modalStore.component.content}
             </Modal.Body>
            )}

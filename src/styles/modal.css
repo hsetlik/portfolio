@@ -1,0 +1,18 @@
+.modal-body {
+    align-self: center;
+    width: max-content;
+}
+
+.modal-content {
+    align-self: center;
+    background-color: aquamarine;
+}
+
+.long-desc {
+    font-style: normal;
+}
+
+.platform-header {
+    font-style: normal;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
