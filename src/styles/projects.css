@@ -23,11 +23,13 @@ p {
 
 .has-bg-img {
     padding: 1em;
-    display: inline-block;
+    /* display: inline-block; */
     overflow: hidden;
     position: relative;
     width: 100%;
     z-index: 1;
+    background-origin: border-box;
+    align-content: center;
 }
 
 
@@ -40,6 +42,7 @@ p {
     z-index: -1;
     /* filters */
     filter: blur(2px) brightness(30%);
+    translate: (-1em, 1em);
 }
 /* this cascades to modal.css */
 

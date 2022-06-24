@@ -6,10 +6,6 @@ interface Props {
     name: string
 }
 
-/* 
-
-*/
-
 export default function ProjectModal({ name }: Props) {
     const project = getProject(name);
     console.log(`Modal for: ${project?.name} is open`);

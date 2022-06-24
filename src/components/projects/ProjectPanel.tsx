@@ -11,7 +11,5 @@ export default function ProjectPanel({ name, desc, image }: ProjectInfo) {
                 <h3 className='project-header' onClick={() => modalStore.openModal(<ProjectModal name={name} />)}>{name}</h3>
                 <p>{desc}</p>
         </div>
-
-
     )
 }
