@@ -8,6 +8,9 @@
 
   body {
     height: 100%;
+    background: rgb(76,115,132);
+    background: radial-gradient(circle, rgba(76,115,132,1) 0%, rgba(4,28,46,1) 100%);
+    height: 100%;
   }
   
   .App-logo {

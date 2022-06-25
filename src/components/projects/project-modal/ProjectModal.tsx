@@ -2,6 +2,7 @@ import React from "react";
 import { getProject } from "../../../app/projectInfo";
 import "../../../styles/modal.css";
 import ProjectModalHeader from "./ProjectModalHeader";
+import TechnologiesList from "./TechnologiesList";
 interface Props {
     name: string
 }
@@ -17,15 +18,7 @@ export default function ProjectModal({ name }: Props) {
                     <div className="row">
                         <div className="col">
                             {project.technologies && (
-                                <div>
-                                    <h5>Technologies:</h5>
-                                    <ul>
-                                        {project.technologies.map(tech => (
-                                            <li>{tech}</li>
-                                        ))}
-                                    </ul>
-
-                                </div>
+                                <TechnologiesList technologies={project.technologies} />
                             )}
                         </div>
                     </div>

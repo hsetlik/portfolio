@@ -1,5 +1,4 @@
 import React from "react";
-import modalStore from "../../../app/modalStore";
 import { getProject } from "../../../app/projectInfo";
 import { useStore } from "../../../app/store";
 import ProjectModal from "../project-modal/ProjectModal";
@@ -14,7 +13,7 @@ function ProjectPanelHeader({name}: Props) {
     return (
     <div>
         <h3 className='project-header' onClick={() => modalStore.openModal(<ProjectModal name={name} />)}>{name}</h3>
-        <p>{project.desc}</p>
+        <p>{project.platform}</p>
     </div>);
 }
 

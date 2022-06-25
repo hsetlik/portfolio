@@ -13,9 +13,9 @@ function App() {
   <>
     <ModalContainer />
     <>
-    <div className="bg-dark vh-100">
+    <div className="container-fluid vh-100">
       <NavigationBar />
-      <div className="container-fluid bg-dark">
+      <div className="container-fluid ">
         <Routes>
           <Route path="/" element={<ProjectsRoute />}></Route>
           <Route path="/skills" element={<SkillsRoute />}/>

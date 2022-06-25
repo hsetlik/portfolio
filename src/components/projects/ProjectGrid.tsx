@@ -30,9 +30,9 @@ export default observer(function ProjectGrid()
     return (
         <div className="container">
             {grid.map(row => (
-                <div className="row" key={grid.indexOf(row)}>
+                <div className="row panel-row" key={grid.indexOf(row)}>
                     {row.map(proj => (
-                        <div className="col" key={proj.name}>
+                        <div className="col panel-col" key={proj.name}>
                             <ProjectPanel {...proj} />
                         </div>
                     ))}

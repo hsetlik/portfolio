@@ -3,14 +3,16 @@ import "../../styles/projects.css";
 import GridModeSelect from "../common/GridModeSelect";
 import AboutPanel from "./AboutPanel";
 import ProjectGrid from "./ProjectGrid";
+import ProjectsHeader from "./ProjectsHeader";
 
 
 export default function ProjectsRoute() {
 
     return (
-        <div className="container">
+        <div className="container" >
             <AboutPanel />
-            <div>
+            <div className="container">
+                <ProjectsHeader />
                 <GridModeSelect />
                 <ProjectGrid />
             </div>

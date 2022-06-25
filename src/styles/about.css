@@ -4,4 +4,17 @@
 
 h1 {
     font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 0.5em;
+}
+
+b {
+    font-weight: bold;
+}
+
+.abt-body {
+    height: max-content;
+}
+
+.abt-panel {
+    padding: 1.5em;
 }
