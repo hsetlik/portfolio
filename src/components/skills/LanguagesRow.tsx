@@ -10,12 +10,12 @@ export default function LanguagesRow() {
     ]
   return (
     <div className='row'>
-        { languages.map(lang => {
-            <div >
+        { languages.map(lang => (
+            <div className='row' key={lang} >
                 {lang}
                 <LanguageLabel language={lang}/>
             </div>
-        })
+        ))
 
         }
         

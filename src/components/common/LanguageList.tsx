@@ -10,7 +10,7 @@ export default function LanguageList({languages}: Props) {
     return (
         <div className="row lang-list"> {
             languages.map(lang => (
-                <LanguageLabel language={lang} />
+                <LanguageLabel language={lang} key={lang} />
             ))
         }
         </div>
