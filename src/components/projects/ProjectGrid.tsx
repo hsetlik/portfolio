@@ -2,7 +2,7 @@ import React from "react";
 
 import { useStore } from "../../app/store";
 import { observer } from "mobx-react-lite";
-import ProjectPanel from "./ProjectPanel";
+import ProjectPanel from "./project-panel/ProjectPanel";
 import { allProjects, GridViewMode, ProjectInfo } from "../../app/projectInfo";
 
 export default observer(function ProjectGrid()

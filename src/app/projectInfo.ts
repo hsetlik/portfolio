@@ -50,9 +50,9 @@ const hex: ProjectInfo = {
     tags: ['JUCE', 'Audio', 'OpenGL', 'Digital Signal Procesing'],
     githubUrl: '/hex',
     viewMode: GridViewMode.CPP,
-    languages: ['C++', 'GLSL'],
+    languages: ['C++'],
     image: '/img/cpp-project-images/hex-screenshot.png',
-    technologies: ['JUCE framework', 'OpenGL'],
+    technologies: ['JUCE framework', 'OpenGL', 'GLSL'],
     longDesc: 'Hex is a six-operator polyphonic FM synthesizer plugin. It features band-limited oscillators with five wave shapes (sine, square, triangle, sawtooth, and white noise), a visual routing editor, a realtime waveform display, and a system to easily save and load preset sounds.'
 }
 
@@ -116,6 +116,7 @@ export const allProjects: ProjectInfo[] = [
     ultra64
 ]
 
-export const getProject = (name: string) => {
-    return allProjects.find(proj => proj.name === name);
+
+export const getProject = (name: string): ProjectInfo => {
+    return allProjects.find(proj => proj.name === name) || codex;
 }

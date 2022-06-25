@@ -44,5 +44,17 @@ p {
     filter: blur(2px) brightness(30%);
     translate: (-1em, 1em);
 }
+
+.lang-list {
+    max-width: 15ch;
+    align-items: flex-start;
+}
+
+.lang-logo {
+    height: 3.5ch;
+    width: 3.5ch;
+    margin: 0.125ch;
+    
+}
 /* this cascades to modal.css */
 
