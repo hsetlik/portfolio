@@ -19,3 +19,17 @@
 - languages
 - frameworks/environments
 - tools
+
+# 6/26
+
+## From yesterday
+
+- Pick fonts and finalize color scheme
+- Flesh out bio/intro on main page
+- ~~Add selected button styling for navbar / project grid buttons~~
+
+## New today
+
+- Lay out tools bar
+- Add descriptions/more explanation to skills page
+- Find logos for frameworks

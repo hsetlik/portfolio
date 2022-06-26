@@ -11,13 +11,15 @@ interface Framework {
     name: string,
     language: string,
     desc?: string,
-    experience?: number
+    experience?: number,
+    image?: string
 }
 
 export const frameworks: Framework[] = [
    {
     name: 'JUCE Framework',
-    language: 'C++'
+    language: 'C++',
+    image: '/img/juce_logo.png'
    },
    {
     name: 'React.js',
@@ -50,6 +52,11 @@ export const tools: Tool[] = [
     },
     {
         name: 'PlatformIO',
+        desc: 'IDE and toolkit for all things embedded C++',
         image: '/img/platformio_logo.svg'
+    },
+    {
+        name: 'node.js / npm',
+        image: '/img/npm_logo.svg'
     }
 ]
