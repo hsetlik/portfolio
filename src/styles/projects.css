@@ -82,7 +82,11 @@ a.bg-primary {
     width: 3.5ch;
     margin: 0.125ch;
 }
-
+/* ================================================== */
+.badge {
+    color: black;
+    margin-left: 0.5em;
+}
 
 /* this cascades to modal.css */
 

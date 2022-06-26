@@ -1,0 +1,45 @@
+h1 {
+    margin: 0.25em;
+    padding: 0.1em;
+}
+
+.row {
+   align-items: center;
+   justify-content: flex-start;
+}
+
+.fl-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.col {
+    justify-content: flex-start;
+}
+
+.lang-col {
+    margin: 0.5em;
+}
+
+.lang-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.badge {
+    display: flex;
+    flex-direction: row;
+    padding: 0.5em;
+    margin: 0.5em;
+    justify-content: flex-start;
+    width: fit-content;
+}
+
+.skill-row {
+    padding: 1em;
+    margin: 0.5em;
+    border-radius: 1em;
+    color: white;
+}

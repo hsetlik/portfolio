@@ -5,13 +5,17 @@ interface Props {
 }
 export default function TechnologiesList({ technologies }: Props) {
     return (
-        <div>
+        <div className='container'>
             <h5>Technologies:</h5>
-            <ul>
-                {technologies.map(tech => (
-                    <li>{tech}</li>
-                ))}
-            </ul>
+            <div className='col'>
+                { technologies.map(tech => (
+                    <div className='badge bg-primary'>
+                        {tech}
+                    </div>
+                ))
+                }
+
+            </div>
         </div>
     )
 }

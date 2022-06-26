@@ -20,7 +20,7 @@ export default function AboutPanel() {
                 </div>
                 <div className="col-md-3">
                     <div className="row img-row">
-                        <img src='/img/portrait.png' alt='portrait' />
+                        <img className="portrait-img" src='/img/portrait.png' alt='portrait' />
                     </div>
                 </div>
             </div>

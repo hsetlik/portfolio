@@ -1,5 +1,6 @@
 .container {
     font-family: monospace;
+    padding: 1em;
 }
 
 h1 {
@@ -25,7 +26,7 @@ b {
     height:fit-content
 }
 
-img {
+.portrait-img {
     max-height: 12em;
     max-width: 12em;
     height: auto;
