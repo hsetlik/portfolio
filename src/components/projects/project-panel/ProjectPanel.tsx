@@ -5,7 +5,7 @@ import ProjectPanelHeader from "./ProjectPanelHeader";
 export default function ProjectPanel({ name, desc, image, languages }: ProjectInfo) {
     // add the background image via inline style
     return (
-        <div className='has-bg-img'>
+        <div className='has-bg-img bg-dark'>
             <img className="bg-img" src={image} alt={image}></img>
             <div className="proj-panel">
                 <ProjectPanelHeader name={name} />

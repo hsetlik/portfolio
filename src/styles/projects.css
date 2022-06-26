@@ -1,15 +1,26 @@
 div {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: white;
+}
+
+a.bg-primary {
+    color: black;
 }
 
 .project-header {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     cursor: pointer;
+    text-shadow: 0.5px 0.5px 2px black;
+}
+.project-header:hover {
+    text-shadow: 1px 1px 2px white;
 }
 /* ================================================================================================= */
 .btn-primary {
     font-size: large;
+}
+
+.btn-primary.active {
+    font-weight: bold;
 }
 
 .btn-group {
@@ -58,6 +69,7 @@ div {
 .proj-panel {
     display: flex;
     flex-direction: column;
+    color: white;
 }
 /* ================================================== */
 .lang-list {

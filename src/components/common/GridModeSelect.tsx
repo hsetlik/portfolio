@@ -12,12 +12,15 @@ export default observer(function GridModeSelect(){
             projectGridStore.viewMode = mode;
         })
     } 
+    const cnAll = `btn btn-primary ${(projectGridStore.viewMode === GridViewMode.All) ? 'active' : ''}`
+    const cnCpp = `btn btn-primary ${(projectGridStore.viewMode === GridViewMode.CPP) ? 'active' : ''}`
+    const cnWeb = `btn btn-primary ${(projectGridStore.viewMode === GridViewMode.Web) ? 'active' : ''}`
 
     return (
-        <div className="btn-group">
-            <button className="btn btn-primary" onClick={() => setViewMode(GridViewMode.All)}>All</button>
-            <button className="btn btn-primary"onClick={() => setViewMode(GridViewMode.CPP)}>C++</button>
-            <button className="btn btn-primary"onClick={() => setViewMode(GridViewMode.Web)} >Web</button>
+        <div className="btn-group bg-primary">
+            <button className={cnAll} onClick={() => setViewMode(GridViewMode.All)}>All</button>
+            <button className={cnCpp} onClick={() => setViewMode(GridViewMode.CPP)}>C++</button>
+            <button className={cnWeb} onClick={() => setViewMode(GridViewMode.Web)} >Web</button>
         </div>
     )
 })

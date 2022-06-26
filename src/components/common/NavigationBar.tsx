@@ -13,8 +13,8 @@ export default observer(function NavigationBar() {
     const classC = (loc.pathname === '/contact') ? ' active' : '';
     console.log(classC);
     return (
-        <nav className="navbar navbar-expand-md navbar-dark bg-dark">
-                <div className="navbar-nav container-fluid">
+        <nav className="navbar navbar-expand-md navbar-dark">
+                <div className="navbar-nav w-100">
                     <li className="nav-item">
                         <a className={`nav-link ${classA}`} href="/">Home</a>
                     </li>

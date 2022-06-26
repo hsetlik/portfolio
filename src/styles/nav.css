@@ -1,0 +1,8 @@
+.navbar-nav {
+    justify-content: space-evenly;
+    margin-bottom: 2em;
+}
+
+.nav-item {
+    font-size: large;
+}

@@ -14,6 +14,7 @@ function ProjectPanelHeader({name}: Props) {
     <div>
         <h3 className='project-header' onClick={() => modalStore.openModal(<ProjectModal name={name} />)}>{name}</h3>
         <p>{project.platform}</p>
+        <hr></hr>
     </div>);
 }
 

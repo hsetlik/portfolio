@@ -11,7 +11,7 @@ export default function ProjectModal({ name }: Props) {
     const project = getProject(name);
     console.log(`Modal for: ${project?.name} is open`);
     return (
-        <div className="container-fluid modal-content bg-dark">
+        <div className="container-fluid modal-content bg-dark proj-panel">
             {project && (
                 <div className="container" >
                     <ProjectModalHeader name={name} />

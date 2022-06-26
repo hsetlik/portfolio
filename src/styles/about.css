@@ -17,4 +17,18 @@ b {
 
 .abt-panel {
     padding: 1.5em;
+    /* color: white; */
+}
+
+.img-row {
+    width: fit-content;
+    height:fit-content
+}
+
+img {
+    max-height: 12em;
+    max-width: 12em;
+    height: auto;
+    width: auto;
+    border-radius: 50%;
 }
