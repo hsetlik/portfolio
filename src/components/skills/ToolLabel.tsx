@@ -1,5 +1,5 @@
 import React from 'react'
-import {Tool, tools} from '../../app/skillsInfo';
+import {Tool} from '../../app/skillsInfo';
 
 interface Props {
     tool: Tool
@@ -7,15 +7,18 @@ interface Props {
 
 export default function ToolLabel({tool}: Props) {
   return (
-    <div className='container'>
-        <div className='row'>
-            <span>{tool.name}</span>
-            
-        </div>
-        <div className='row'>
-
-        </div>
-
+    <div className='row bg-primary fit-row tool-label'>
+          <div className='col-md-8 fit-col'>
+            <p className='lead'>{tool.name}</p>
+            {tool.desc && (
+              <p>{tool.desc}</p>
+            )}            
+          </div>
+          {tool.image && (
+            <div className='col-md-4 fit-col'>
+              <img src={tool.image} alt={tool.name} className='tool-logo' />
+            </div>
+          )}
     </div>
   )
 }

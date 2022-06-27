@@ -2,7 +2,9 @@ export const languages = [
     'C++',
     'C#',
     'JavaScript',
-    'TypeScript'
+    'TypeScript',
+    'CSS3',
+    'HTML5'
 ]
 
 export interface Framework {
@@ -10,7 +12,8 @@ export interface Framework {
     language: string,
     desc?: string,
     experience?: number,
-    image?: string
+    image?: string,
+    usedIn?: string[], // store names of relevant projects here
 }
 
 export const frameworks: Framework[] = [

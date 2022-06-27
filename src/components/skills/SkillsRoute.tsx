@@ -6,17 +6,22 @@ import ToolsRow from "./ToolsRow";
 import '../../styles/skills.css';
 
 export default function SkillsRoute() {
-/* 
-    
-*/
+    /* 
+        
+    */
     return (
         <div className="container">
-            <div className="col">
-                <SkillsHeader />
-                <LanguagesRow />
-                <FrameworksRow />
-                <ToolsRow />
+            <SkillsHeader />
+            <div className="row">
+                <div className="col">
+                    <LanguagesRow />
+                    <ToolsRow />
+                </div>
+                <div className="col">
+                    <FrameworksRow />
+                </div>
             </div>
+
         </div>
     )
 }

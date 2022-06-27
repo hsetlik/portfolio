@@ -46,3 +46,11 @@
       transform: rotate(360deg);
     }
   }
+
+  .bg-dark {
+    color: var(--bs-light);
+  }
+
+  .bg-primary {
+    color: var(--bs-dark);
+  }

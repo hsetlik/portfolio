@@ -4,9 +4,9 @@ import LanguageLabel from '../common/LanguageLabel'
 
 export default function LanguagesRow() {
     return (
-        <div className='row skill-row bg-dark'>
+        <div className='col skill-row bg-dark'>
             <div className='row'>
-                <h3 className='bg-dark'>Programming Languages:</h3>
+                <h3 className='bg-dark'>Languages:</h3>
             </div>
             <div className='row lang-row'>
                 {languages.map(lang => (
