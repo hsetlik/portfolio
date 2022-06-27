@@ -7,13 +7,6 @@ h1 {
    align-items: center;
    justify-content: flex-start;
 }
-
-.fl-row {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-}
-
 .col {
     justify-content: flex-start;
 }
@@ -33,13 +26,37 @@ h1 {
     flex-direction: row;
     padding: 0.5em;
     margin: 0.5em;
+    margin-left: 1em;
     justify-content: flex-start;
     width: fit-content;
+    color: var(--bs-dark);
 }
+
+/* ==================================== */
 
 .skill-row {
     padding: 1em;
     margin: 0.5em;
     border-radius: 1em;
     color: white;
+}
+
+.frm-logo {
+    height: 4em;
+    width: 4em;
+    justify-self: left;
+}
+
+.frm-name {
+    width: fit-content;
+}
+
+.frm-label {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    width: fit-content;
+    padding: 0.5em;
+    border-radius: 0.5em;
 }

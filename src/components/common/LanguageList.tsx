@@ -5,15 +5,19 @@ interface Props {
     languages: string[]
 }
 
-export default function LanguageList({languages}: Props) {
-
+export default function LanguageList({ languages }: Props) {
+    const str = (languages.length > 1) ? 'Languages:' : 'Language:';
     return (
-        <div className="row lang-list"> {
-            languages.map(lang => (
-                <LanguageLabel language={lang} key={lang} />
-            ))
-        }
+        <div className="col">
+            {str}
+            <div className="row lang-list"> {
+                languages.map(lang => (
+                    <LanguageLabel language={lang} key={lang} />
+                ))
+            }
+            </div>
         </div>
+
     )
 
 }
