@@ -7,7 +7,6 @@ import '../../styles/skills.css';
 
 export default function SkillsRoute() {
     /* 
-        
     */
     return (
         <div className="container">
@@ -21,7 +20,6 @@ export default function SkillsRoute() {
                     <FrameworksRow />
                 </div>
             </div>
-
         </div>
     )
 }

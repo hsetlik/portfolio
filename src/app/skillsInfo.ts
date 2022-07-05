@@ -28,7 +28,7 @@ export const frameworks: Framework[] = [
     image: '/img/framework-logos/react_logo.svg'
    },
    {
-    name: 'ASP.NET Web API',
+    name: 'ASP.NET',
     language: 'C#',
     image: '/img/framework-logos/dotnet_logo.svg'
    },
@@ -62,5 +62,13 @@ export const tools: Tool[] = [
     {
         name: 'node.js / npm',
         image: '/img/tool-logos/npm_logo.svg'
+    },
+    {
+        name: 'PostGreSQL',
+        image: '/img/tool-logos/postgresql_logo.svg'
+    },
+    {
+        name: 'Bootstrap 5',
+        image: '/img/tool-logos/bootstrap_logo.svg'
     }
 ]

@@ -15,7 +15,8 @@ export interface ProjectInfo {
     // Optional stuff for modal detail component
     image?: string,
     technologies?: string[],
-    longDesc?: string
+    longDesc?: string,
+    softwareFeatures?: string[] //list of smart guy stuff
 }
 
 const codex: ProjectInfo = {
@@ -27,7 +28,7 @@ const codex: ProjectInfo = {
     viewMode: GridViewMode.Web,
     languages: ['C#', 'TypeScript'],
     image: 'img/web-project-images/codex-screenshot.png',
-    technologies: ['ASP.NET 5.0', 'React'], //TODO: there are a bunch more techs probably
+    technologies: ['ASP.NET 5.0', 'React', 'PostGreSQL', 'Entity framework'], //TODO: there are a bunch more techs probably
     longDesc: 'Codex is a language learning tool I created out of dissatisfaction with existing language apps. Rather than the usual gamified study system of boring lessons created for teaching, Codex is based on real-world written and video content aimed at native speakers. *something about Krashen here?* Codex gives learners the tools to understand a language, including a databse of learned words and phrases. Users'
 }
 
@@ -40,7 +41,8 @@ const octane: ProjectInfo = {
     viewMode: GridViewMode.CPP,
     languages: ['C++'],
     image: '/img/cpp-project-images/octane-screenshot.png',
-    technologies: ['JUCE framework', 'OpenGL']
+    technologies: ['JUCE framework', 'OpenGL'],
+    softwareFeatures: ['High performance anti-aliasing oscillators', 'OpenGL-based wave visualizer', 'Drag-and-drop modulation routing system']
 }
 
 const hex: ProjectInfo = {
@@ -53,7 +55,8 @@ const hex: ProjectInfo = {
     languages: ['C++'],
     image: '/img/cpp-project-images/hex-screenshot.png',
     technologies: ['JUCE framework', 'OpenGL', 'GLSL'],
-    longDesc: 'Hex is a six-operator polyphonic FM synthesizer plugin. It features band-limited oscillators with five wave shapes (sine, square, triangle, sawtooth, and white noise), a visual routing editor, a realtime waveform display, and a system to easily save and load preset sounds.'
+    longDesc: 'Hex is a six-operator polyphonic FM synthesizer plugin. It features band-limited oscillators with five wave shapes (sine, square, triangle, sawtooth, and white noise), a visual routing editor, a realtime waveform display, and a system to easily save and load preset sounds.',
+    softwareFeatures: ['Six anti-aliasing FM Oscillator', 'Custom FM routing algorithms', 'OpenGL-based realtime oscilloscope']
 }
 
 const cssScraper: ProjectInfo = {
