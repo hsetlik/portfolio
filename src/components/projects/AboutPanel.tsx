@@ -13,7 +13,7 @@ export default function AboutPanel() {
             <div className="row">
                 <div className="col-md-9">
                     <h1 className="display-1">Hi. I'm Hayden Setlik.</h1>
-                    <div className="lead abt-body">
+                    <div className="abt-body">
                         <h3>I'm a C++ and full stack web developer.</h3>
                         <p>I create software with React, ASP.NET, and various flavors of C++.</p>
                     </div>

@@ -98,11 +98,3 @@ p {
     width: fit-content;
     vertical-align: middle;
 }
-
-p {
-    font-style: oblique;
-}
-
-p.lead {
-    font-style: normal;
-}

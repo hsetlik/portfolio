@@ -11,11 +11,9 @@ export default function ProjectsRoute() {
     return (
         <div className="container" >
             <AboutPanel />
-            <div className="container">
                 <ProjectsHeader />
                 <GridModeSelect />
                 <ProjectGrid />
-            </div>
         </div>
     )
 }

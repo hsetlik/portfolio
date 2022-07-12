@@ -10,9 +10,7 @@ a.bg-primary {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     cursor: pointer;
     text-shadow: 0.5px 0.5px 2px black;
-}
-.project-header:hover {
-    text-shadow: 1px 1px 2px white;
+    animation: header-enter 2s;
 }
 /* ================================================================================================= */
 .btn-primary {
@@ -61,9 +59,9 @@ a.bg-primary {
 .panel-col {
     /* width: min-content; */
     /* background-color: blue; */
-    margin: 1em;
-    height: 100%;
-    flex-grow: 1em;
+    padding: 1.5em;
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
 
 .proj-panel {
@@ -83,7 +81,14 @@ a.bg-primary {
     margin: 0.125ch;
 }
 /* ================================================== */
-
-
+/* Animation stuff */
+@keyframes header-enter {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
 /* this cascades to modal.css */
 
