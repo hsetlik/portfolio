@@ -17,9 +17,9 @@ function App() {
       <NavigationBar />
       <div className="container-fluid ">
         <Routes>
-          <Route path="/" element={<ProjectsRoute />}></Route>
-          <Route path="/skills" element={<SkillsRoute />}/>
-          <Route path="/contact" element={<ContactRoute />}/>
+          <Route path="/portfolio" element={<ProjectsRoute />}></Route>
+          <Route path="/portfolio/skills" element={<SkillsRoute />}/>
+          <Route path="/portfolio/contact" element={<ContactRoute />}/>
         </Routes>
       </div>
     </div>

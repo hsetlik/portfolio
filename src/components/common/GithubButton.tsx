@@ -12,7 +12,7 @@ export default function GithubButton({ name }: Props) {
       <div className='row' >
         <p>See the source code: </p>
         <a href={url}>
-          <img className='lang-logo' alt='gh' src='/img/tool-logos/github_logo.svg'></img>
+          <img className='lang-logo' alt='gh' src='img/tool-logos/github_logo.svg'></img>
         </a>
       </div>
 
