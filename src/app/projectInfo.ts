@@ -56,7 +56,7 @@ const hex: ProjectInfo = {
     image: '/img/cpp-project-images/hex-screenshot.png',
     technologies: ['JUCE framework', 'OpenGL', 'GLSL'],
     longDesc: 'Hex is a six-operator polyphonic FM synthesizer plugin. It features band-limited oscillators with five wave shapes (sine, square, triangle, sawtooth, and white noise), a visual routing editor, a realtime waveform display, and a system to easily save and load preset sounds.',
-    softwareFeatures: ['Six anti-aliasing FM Oscillator', 'Custom FM routing algorithms', 'OpenGL-based realtime oscilloscope']
+    softwareFeatures: ['Six anti-aliasing FM Oscillators', 'Custom FM routing algorithms', 'OpenGL-based realtime oscilloscope']
 }
 
 const cssScraper: ProjectInfo = {

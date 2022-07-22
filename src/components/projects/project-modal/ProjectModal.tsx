@@ -1,6 +1,7 @@
 import React from "react";
 import { getProject } from "../../../app/projectInfo";
 import "../../../styles/modal.css";
+import GithubButton from "../../common/GithubButton";
 import ProjectModalHeader from "./ProjectModalHeader";
 import TechnologiesList from "./TechnologiesList";
 interface Props {
@@ -21,6 +22,7 @@ export default function ProjectModal({ name }: Props) {
                                 <TechnologiesList technologies={project.technologies} />
                             )}
                         </div>
+                        <GithubButton name={project.name} />
                     </div>
                     <div className='row'>
                         {project.longDesc && (
