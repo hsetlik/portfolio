@@ -3,11 +3,10 @@
 }
 
 h1.display-1 {
-    font-family: 'Bebas Neue';
+    font-family: 'Roboto Mono', monospace;
     margin-bottom: 0.5em;
-    font-size: 7em;
+    font-size: 4em;
     padding: 0%;
-    margin: 0%;
 }
 
 b {
@@ -35,3 +34,24 @@ b {
     width: auto;
     border-radius: 50%;
 }
+
+.typing {
+    width: 22ch;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 0.125em solid;
+    /* width: fit-content; */
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }

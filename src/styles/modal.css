@@ -25,3 +25,8 @@
 .has-bg-img {
     background-origin: border-box;
 }
+
+.gh-button {
+    width: fit-content;
+    border-radius: 0.5em;
+}

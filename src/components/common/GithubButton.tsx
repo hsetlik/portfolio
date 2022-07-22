@@ -9,9 +9,9 @@ export default function GithubButton({ name }: Props) {
   const project = getProject(name);
   const url = `https://www.github.com/hsetlik${project.githubUrl}`;
   return (
-      <div className='row' >
-        <p>See the source code: </p>
-        <a href={url}>
+      <div className='row bg-primary gh-button' >
+        <span className='col'>Source code:</span>
+        <a className='col' href={url}>
           <img className='lang-logo' alt='gh' src='img/tool-logos/github_logo.svg'></img>
         </a>
       </div>

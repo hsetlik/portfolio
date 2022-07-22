@@ -80,6 +80,9 @@ a.bg-primary {
     width: 3.5ch;
     margin: 0.125ch;
 }
+
+/* ================================================== */
+
 /* ================================================== */
 /* Animation stuff */
 @keyframes header-enter {
@@ -90,5 +93,5 @@ a.bg-primary {
         opacity: 100%;
     }
 }
-/* this cascades to modal.css */
+
 
