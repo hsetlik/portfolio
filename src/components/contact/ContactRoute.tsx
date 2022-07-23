@@ -1,4 +1,5 @@
 import React from "react";
+import { useLocation } from "react-router-dom";
 
 export default function ContactRoute(){
     /* 
@@ -7,6 +8,8 @@ export default function ContactRoute(){
         2. Email link
         3. Profile links (github/linkedin
     */
+   const loc = useLocation();
+   console.log(`Contact route initialized at: ${loc.pathname}`);
     return (
         <div className="container align-self-center bg-primary">
             <div className="col">

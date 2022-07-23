@@ -38,10 +38,12 @@ b {
 .typing {
     width: 22ch;
     animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    -webkit-animation: typing 2s steps(22), blink .5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
     border-right: 0.125em solid;
-    /* width: fit-content; */
+    border-top: 0%;
+    border-bottom: 0%;
   }
   
   @keyframes typing {
@@ -55,3 +57,15 @@ b {
       border-color: transparent
     }
   }
+  @-webkit-keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @-webkit-keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
+
