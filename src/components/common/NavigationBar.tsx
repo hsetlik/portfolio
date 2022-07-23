@@ -1,29 +1,24 @@
 import { observer } from "mobx-react-lite";
 import React from "react";
-import { useLocation } from "react-router-dom";
+import { SiteSection } from "../../app/appInfo";
+import { useStore } from "../../app/store";
 
 import "../../styles/nav.css";
 
 export default observer(function NavigationBar() {
-    const loc = useLocation()
-    const classA = (loc.pathname === '/') ? ' active' : '';
+    const {projectGridStore: {setSection, currentSection}} = useStore();
+    const classA = (currentSection === SiteSection.Projects) ? ' active' : '';
     console.log(classA);
-    const classB = (loc.pathname === '/skills') ? ' active' : '';
+    const classB = (currentSection === SiteSection.Skills) ? ' active' : '';
     console.log(classB);
-    const classC = (loc.pathname === '/contact') ? ' active' : '';
+    const classC = (currentSection === SiteSection.Contact) ? ' active' : '';
     console.log(classC);
     return (
         <nav className="navbar navbar-expand-md navbar-dark">
                 <div className="navbar-nav w-100">
-                    <li className="nav-item">
-                        <a className={`nav-link ${classA}`} href='/'>Home</a>
-                    </li>
-                    <li className="nav-item">
-                        <a className={`nav-link ${classB}`} href='skills'>Skills</a>
-                    </li>
-                    <li className="nav-item">
-                        <a className={`nav-link ${classC}`} href="contact">Contact</a>
-                    </li>
+                        <li className={`nav-item nav-link ${classA}`} onClick={() => setSection(SiteSection.Projects)} >Home</li>
+                        <li className={`nav-item nav-link ${classB}`} onClick={() => setSection(SiteSection.Projects)} >Skills</li>
+                        <li className={`nav-item nav-link ${classC}`} onClick={() => setSection(SiteSection.Projects)} >Contact</li>
                 </div>
         </nav>
 
