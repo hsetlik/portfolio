@@ -9,7 +9,7 @@ export default function TechnologiesList({ technologies }: Props) {
             <h5>Technologies:</h5>
             <div className='col'>
                 { technologies.map(tech => (
-                    <div className='badge bg-primary'>
+                    <div className='badge bg-primary' key={tech}>
                         {tech}
                     </div>
                 ))

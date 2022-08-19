@@ -10,7 +10,7 @@ export default function ToolsRow() {
       </div>
       <div className='row tools-row'>
         {tools.map(tool => (
-          <ToolLabel tool={tool} />
+          <ToolLabel key={tool.name} tool={tool} />
         ))}
       </div>
     </div>

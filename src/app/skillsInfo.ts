@@ -51,12 +51,12 @@ export const tools: Tool[] = [
         image: '/img/tool-logos/github_logo.svg'
     },
     {
-        name: 'VSCode',
-        image: '/img/tool-logos/vscode_logo.svg'
+        name: 'Azure App Service',
+        image: '/img/tool-logos/azure_logo.svg'
     },
     {
         name: 'PlatformIO',
-        desc: 'IDE and toolkit for all things embedded C++',
+        //desc: 'IDE and toolkit for all things embedded C++',
         image: '/img/tool-logos/platformio_logo.svg'
     },
     {
@@ -70,5 +70,9 @@ export const tools: Tool[] = [
     {
         name: 'Bootstrap 5',
         image: '/img/tool-logos/bootstrap_logo.svg'
+    },
+    {
+        name: 'Linux / shell scripting',
+        image: '/img/tool-logos/linux_logo.svg'
     }
 ]

@@ -17,8 +17,8 @@ export default observer(function NavigationBar() {
         <nav className="navbar navbar-expand-md navbar-dark">
                 <div className="navbar-nav w-100">
                         <li className={`nav-item nav-link ${classA}`} onClick={() => setSection(SiteSection.Projects)} >Home</li>
-                        <li className={`nav-item nav-link ${classB}`} onClick={() => setSection(SiteSection.Projects)} >Skills</li>
-                        <li className={`nav-item nav-link ${classC}`} onClick={() => setSection(SiteSection.Projects)} >Contact</li>
+                        <li className={`nav-item nav-link ${classB}`} onClick={() => setSection(SiteSection.Skills)} >Skills</li>
+                        <li className={`nav-item nav-link ${classC}`} onClick={() => setSection(SiteSection.Contact)} >Contact</li>
                 </div>
         </nav>
 

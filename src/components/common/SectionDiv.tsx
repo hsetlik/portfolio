@@ -8,12 +8,11 @@ import SkillsRoute from "../skills/SkillsRoute";
 
 export default observer(function SectionDiv() {
     const {projectGridStore: {currentSection}} = useStore();
-    const getCurrentSection = (): JSX.Element => {
-        if (currentSection === SiteSection.Projects)
-            return (<ProjectsRoute />);
-        if (currentSection === SiteSection.Skills)
-            return (<SkillsRoute />);
-        return (<ContactRoute />)
-    }
-    return getCurrentSection();
+    return (
+        <div className="vh-100">
+            {currentSection === SiteSection.Projects && (<ProjectsRoute />)}
+            {currentSection === SiteSection.Contact && (<ContactRoute />)}
+            {currentSection === SiteSection.Skills && (<SkillsRoute />)}
+        </div>
+    )
 });

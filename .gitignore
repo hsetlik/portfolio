@@ -22,6 +22,6 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-/src/assets
-
-/public/img
+/public/img/cpp-project-images
+/public/img/web-project-images
+/public/img/portrait.png

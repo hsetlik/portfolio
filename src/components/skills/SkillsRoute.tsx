@@ -4,13 +4,13 @@ import LanguagesRow from "./LanguagesRow";
 import SkillsHeader from "./SkillsHeader";
 import ToolsRow from "./ToolsRow";
 import '../../styles/skills.css';
-import { useLocation } from "react-router-dom";
+// import { useLocation } from "react-router-dom";
 
 export default function SkillsRoute() {
     /* 
     */
-   const loc = useLocation();
-   console.log(`Skills route initialized at: ${loc.pathname}`);
+//    const loc = useLocation();
+//    console.log(`Skills route initialized at: ${loc.pathname}`);
     return (
         <div className="container">
             <SkillsHeader />
