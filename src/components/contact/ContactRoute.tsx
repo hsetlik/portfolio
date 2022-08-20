@@ -1,4 +1,5 @@
 import React from "react";
+import EmailForm from "./EmailForm";
 // import { useLocation } from "react-router-dom";
 
 export default function ContactRoute(){
@@ -14,8 +15,10 @@ export default function ContactRoute(){
         <div className="container align-self-center bg-primary">
             <div className="col">
                 <h2>Contact me</h2>
-                <p>Maybe some little subhead here</p>
-                <p className="subhead"></p>
+                <div className="row">
+                    <EmailForm />
+                </div> 
+                
             </div>
         </div>
     )

@@ -19,7 +19,7 @@ export default function AboutPanel() {
                         <p>I write software with React, ASP.NET, and various flavors of C++. I've had a lifelong 
                            passion for creating things and solving problems. In the realm of programming, my own 
                            interests led me to learning about and writing various types of software in different environments, 
-                           including audio plugins built with the JUCE framework, web apps built with React.js, APIs built with PostgreSQL and ASP.NET.
+                           including audio plugins built with the JUCE framework, web apps built with React.js, and APIs built with PostgreSQL and ASP.NET.
                            You'll see a collection of my past projects below; I invite you to take a look around. 
                            Click on any project to see more details or to view the source code on GitHub.
                         </p>
@@ -27,7 +27,7 @@ export default function AboutPanel() {
                 </div>
                 <div className="col-md-3">
                     <div className="row img-row">
-                        <img className="portrait-img" src='/img/portrait.png' alt='portrait' />
+                        <img className="portrait-img" src='/portfolio/img/portrait.png' alt='portrait' />
                     </div>
                 </div>
             </div>

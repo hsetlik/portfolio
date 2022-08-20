@@ -21,7 +21,7 @@ export interface ProjectInfo {
 
 const codex: ProjectInfo = {
     name: 'Codex',
-    platform: 'React app (front end) and ASP.NET 5.0 Web API (back end)',
+    platform: 'React app (front end) and .NET 6.0 Web API (back end)',
     desc: 'Multimedia web app for language learning',
     tags: ['Dotnet', 'React'],
     githubUrl: '/codex',
@@ -68,7 +68,7 @@ const cssScraper: ProjectInfo = {
     viewMode: GridViewMode.Web,
     languages: ['C#'],
     image:'/portfolio/img/web-project-images/css-scraper-screenshot.png',
-    technologies: ['.NET 5.0', 'C#11']
+    technologies: ['.NET 6.0', 'C#11']
 }
 
 //TODO: get nice photo for this
