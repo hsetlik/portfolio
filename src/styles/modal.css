@@ -29,4 +29,6 @@
 .gh-button {
     width: fit-content;
     border-radius: 0.5em;
+    margin-top: 1em;
+    padding: 0.125em;
 }
