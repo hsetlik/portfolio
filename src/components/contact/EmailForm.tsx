@@ -37,7 +37,7 @@ export default function EmailForm() {
             });
     }
     return (
-        <form onSubmit={formik.handleSubmit} className="col">
+        <form onSubmit={formik.handleSubmit} className="col email-form">
             <label>Subject</label>
             <input
                 name="subject"

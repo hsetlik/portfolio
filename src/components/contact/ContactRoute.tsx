@@ -11,13 +11,13 @@ export default function ContactRoute() {
             <div className="col">
                 <div className="row">
                     <div className="col-md-8">
-                        <h2>Contact me:</h2>       
+                        <h2 className="bebas">Contact me:</h2>       
                         <p>
                             You can get in touch with me via email in the form below or directly at haydensetlik@gmail.com.
                         </p>
                     </div>
                     <div className="col-md-4 bg-dark" id="findme">
-                        <h4>Find me on:</h4>
+                        <h4 className="bebas">Find me on:</h4>
                         <FindMeLink
                         name="GitHub"
                         img="/portfolio/img/tool-logos/github_logo.svg"

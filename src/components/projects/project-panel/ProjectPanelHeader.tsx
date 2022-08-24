@@ -12,7 +12,7 @@ function ProjectPanelHeader({name}: Props) {
     const {modalStore} = useStore();
     return (
     <div>
-        <h3 className='project-header' onClick={() => modalStore.openModal(<ProjectModal name={name} />)}>{name}</h3>
+        <h3 className='project-header bebas' onClick={() => modalStore.openModal(<ProjectModal name={name} />)}>{name}</h3>
         <p>{project.platform}</p>
         <hr></hr>
     </div>);

@@ -6,7 +6,7 @@ export default function FrameworksRow() {
   return (
     <div className='col skill-row bg-primary text-dark'>
       <div className='row'>
-        <h3 className='skills-header'>Frameworks and Platforms:</h3>
+        <h3 className='skills-header bebas'>Frameworks and Platforms:</h3>
       </div>
       <div className='col'>
         {frameworks.map(frm => (

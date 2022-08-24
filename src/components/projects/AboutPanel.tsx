@@ -11,11 +11,11 @@ export default function AboutPanel() {
     return (
         <div className="align-self-center bg-primary abt-panel">
             <div className="row">
-                <div className="col-md-9">
-                    <h1 className="display-1 typing">Hi. I'm Hayden Setlik.</h1>
+                <div className="col-md-10">
+                    <h1 className="display-1 bebas">Hi. I'm Hayden Setlik.</h1>
                     <hr></hr>
                     <div className="abt-body">
-                        <h3>I'm a C++ and full stack web developer.</h3>
+                        <h3 className="bebas">I'm a C++ and full stack web developer.</h3>
                         <p>I write software with React, ASP.NET, and various flavors of C++. I've had a lifelong 
                            passion for creating things and solving problems. In the realm of programming, my own 
                            interests led me to learning about and writing various types of software in different environments, 
@@ -25,7 +25,7 @@ export default function AboutPanel() {
                         </p>
                     </div>
                 </div>
-                <div className="col-md-3">
+                <div className="col-md-2">
                     <div className="row img-row">
                         <img className="portrait-img" src='/portfolio/img/portrait.png' alt='portrait' />
                     </div>

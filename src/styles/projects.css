@@ -1,13 +1,8 @@
-div {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
 a.bg-primary {
     color: black;
 }
 
 .project-header {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     cursor: pointer;
     text-shadow: 0.5px 0.5px 2px black;
     animation: header-enter 2s;
