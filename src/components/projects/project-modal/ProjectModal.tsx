@@ -1,4 +1,5 @@
 import React from "react";
+import ReactPlayer from "react-player";
 import { getProject } from "../../../app/projectInfo";
 import "../../../styles/modal.css";
 import GithubButton from "../../common/GithubButton";
@@ -27,6 +28,11 @@ export default function ProjectModal({ name }: Props) {
                     <div className='row'>
                         {project.longDesc && (
                             <p className="long-desc">{project.longDesc}</p>
+                        )}
+                    </div>
+                    <div className="row">
+                        {project.video && (
+                            <ReactPlayer url={project.video} />
                         )}
                     </div>
 

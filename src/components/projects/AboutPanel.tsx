@@ -18,10 +18,10 @@ export default function AboutPanel() {
                         <h3 className="bebas">I'm a C++ and full stack web developer.</h3>
                         <p>I write software with React, ASP.NET, and various flavors of C++. I've had a lifelong 
                            passion for creating things and solving problems. In the realm of programming, my own 
-                           interests led me to learning about and writing various types of software in different environments, 
-                           including audio plugins built with the JUCE framework, web apps built with React.js, and APIs built with PostgreSQL and ASP.NET.
+                           interests led me to learning about and writing software in different environments, 
+                           including audio plugins built with the JUCE framework, web apps built with React.js, and APIs built with ASP.NET.
                            You'll see a collection of my past projects below; I invite you to take a look around. 
-                           Click on any project to see more details or to view the source code on GitHub.
+                           Click on any project below to see more details or to view the source code on GitHub.
                         </p>
                     </div>
                 </div>

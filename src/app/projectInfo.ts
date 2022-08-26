@@ -16,7 +16,8 @@ export interface ProjectInfo {
     image?: string,
     technologies?: string[],
     longDesc?: string,
-    softwareFeatures?: string[] //list of smart guy stuff
+    softwareFeatures?: string[] //list of smart guy stuff,
+    video?: string
 }
 
 const codex: ProjectInfo = {
@@ -29,20 +30,21 @@ const codex: ProjectInfo = {
     languages: ['C#', 'TypeScript'],
     image: '/portfolio/img/web-project-images/codex-screenshot.png',
     technologies: ['ASP.NET 5.0', 'React', 'PostGreSQL', 'Entity framework'], //TODO: there are a bunch more techs probably
-    longDesc: 'Codex is a language learning tool I created out of dissatisfaction with existing language apps. Rather than the usual gamified study system of boring lessons created for teaching, Codex is based on real-world written and video content aimed at native speakers. *something about Krashen here?* Codex gives learners the tools to understand a language, including a databse of learned words and phrases. Users'
+    longDesc: 'Codex is a language learning tool I created out of dissatisfaction with existing language apps. Rather than the usual gamified study system of boring lessons created for teaching, Codex is based on real-world written and video content aimed at native speakers. Codex gives learners the tools to understand a language, including a databse of learned words and phrases and one-click translations of new words.'
 }
 
 const octane: ProjectInfo = {
     name: 'Octane',
     platform: 'VST3/AU Audio Plugin',
     desc: 'Full-featured wavetable synthesizer',
-    tags: ['JUCE', 'Audio'],
+    tags: ['JUCE', 'Audio', 'Digital Signal Processing'],
     githubUrl: '/octane',
     viewMode: GridViewMode.CPP,
     languages: ['C++'],
     image: '/portfolio/img/cpp-project-images/octane-screenshot.png',
     technologies: ['JUCE framework', 'OpenGL'],
-    softwareFeatures: ['High performance anti-aliasing oscillators', 'OpenGL-based wave visualizer', 'Drag-and-drop modulation routing system']
+    softwareFeatures: ['High performance anti-aliasing oscillators', 'OpenGL-based wave visualizer', 'Drag-and-drop modulation routing system'],
+    longDesc: 'Based around the principle of wavetable synthesis, Octane is a powerful synthesizer plugin which gives users the power to create waveforms based on an audio file. It features four band-limited anti-aliasing wavetable oscillators, four LFOs with user-defined shapes, numerous FIR and FIR filter options, and an intuitive drag-and-drop modulation system to tie it all together.'
 }
 
 const hex: ProjectInfo = {
@@ -56,7 +58,8 @@ const hex: ProjectInfo = {
     image: '/portfolio/img/cpp-project-images/hex-screenshot.png',
     technologies: ['JUCE framework', 'OpenGL', 'GLSL'],
     longDesc: 'Hex is a six-operator polyphonic FM synthesizer plugin. It features band-limited oscillators with five wave shapes (sine, square, triangle, sawtooth, and white noise), a visual routing editor, a realtime waveform display, and a system to easily save and load preset sounds.',
-    softwareFeatures: ['Six anti-aliasing FM Oscillators', 'Custom FM routing algorithms', 'OpenGL-based realtime oscilloscope']
+    softwareFeatures: ['Six anti-aliasing FM Oscillators', 'Custom FM routing algorithms', 'OpenGL-based realtime oscilloscope'],
+    video: "https://youtu.be/fvvg2kBd86o"
 }
 
 const cssScraper: ProjectInfo = {
@@ -92,14 +95,15 @@ export const ltSpicePath: ProjectInfo = {
     githubUrl: '/After-Effects-LT-Spice-Path-Creator',
     viewMode: GridViewMode.Web,
     languages: ['JavaScript'],
-    image: '/portfolio/img/web-project-images/path-creator-screenshot.png'
+    image: '/portfolio/img/web-project-images/path-creator-screenshot.png',
+    longDesc: 'This ScriptUI panel for Adobe After Effects made to help animate circuit simulation voltage graphs. Any voltage over time signal in a SPICE circuit simulation can be saved as text and imported by the script to repsoduce all the detailed simulation graph data as a ready-to-use shape layer.'
 }
 
 export const arbitraryFunctionGen: ProjectInfo = {
     name: "Arbitrary Function Generator",
     platform: 'ESP32 + Arduino framework',
     desc: "ESP32-based signal generator for testing and calibrating analog circuits",
-    tags: ['Embedded'],
+    tags: ['Embedded', 'Digital Signal Processing'],
     githubUrl: '/ArbitraryFunctionGen',
     viewMode: GridViewMode.CPP,
     languages: ['C++'],
