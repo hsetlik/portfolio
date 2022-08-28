@@ -30,7 +30,8 @@ const codex: ProjectInfo = {
     languages: ['C#', 'TypeScript'],
     image: '/portfolio/img/web-project-images/codex-screenshot.png',
     technologies: ['ASP.NET 5.0', 'React', 'PostGreSQL', 'Entity framework'], //TODO: there are a bunch more techs probably
-    longDesc: 'Codex is a language learning tool I created out of dissatisfaction with existing language apps. Rather than the usual gamified study system of boring lessons created for teaching, Codex is based on real-world written and video content aimed at native speakers. Codex gives learners the tools to understand a language, including a databse of learned words and phrases and one-click translations of new words.'
+    longDesc: 'Codex is a language learning tool I created out of dissatisfaction with existing language apps. Rather than the usual gamified study system of boring lessons created for teaching, Codex is based on real-world written and video content aimed at native speakers. Codex gives learners the tools to understand a language, including a databse of learned words and phrases and one-click translations of new words.',
+    video: 'https://youtu.be/ewWX6Tdu7HM'
 }
 
 const octane: ProjectInfo = {
@@ -71,7 +72,7 @@ const cssScraper: ProjectInfo = {
     viewMode: GridViewMode.Web,
     languages: ['C#'],
     image:'/portfolio/img/web-project-images/css-scraper-screenshot.png',
-    technologies: ['.NET 6.0', 'C#11']
+    technologies: ['.NET 6', 'C#11']
 }
 
 //TODO: get nice photo for this
@@ -85,7 +86,8 @@ export const ultra64: ProjectInfo = {
     languages: ['C++'],
     image: '/portfolio/img/cpp-project-images/ultra64-photo.png',
     technologies: ['PlatformIO', 'Arduino framework', 'SPI and I2C protocols'],
-    longDesc: 'The Ultra64 is a musical step sequencer designed for Eurorack standard modular synthesizers. The brain of the sequencer is an Espressif ESP32 microcontroller with firmware built on the Arduino framework. In addition to the main sequencing logic, the microcontroller is responsible for handling buttons and rotary encoders, driving the WS2812b LEDs and the I2C OLED display, and managing four channels of DAC output. The sequencer features four independent sequence tracks, a system for saving and loading patterns from the ESP32\'s flash storage, and over-the-air firmware updating capability.'
+    longDesc: 'The Ultra64 is a musical step sequencer designed for Eurorack modular synthesizers. The brain of the sequencer is an Espressif ESP32 microcontroller with firmware built on the Arduino framework. In addition to the main sequencing logic, the microcontroller is responsible for handling buttons and rotary encoders, driving the WS2812b LEDs and the I2C OLED display, and managing four channels of DAC output. The sequencer features four independent sequence tracks, a system for saving and loading patterns from the ESP32\'s flash storage, and over-the-air firmware update capability.',
+    video: 'https://youtu.be/nZWDYzxozPs'
 }
 export const ltSpicePath: ProjectInfo = {
     name: "After Effects circuit path creator",
@@ -96,7 +98,7 @@ export const ltSpicePath: ProjectInfo = {
     viewMode: GridViewMode.Web,
     languages: ['JavaScript'],
     image: '/portfolio/img/web-project-images/path-creator-screenshot.png',
-    longDesc: 'This ScriptUI panel for Adobe After Effects made to help animate circuit simulation voltage graphs. Any voltage over time signal in a SPICE circuit simulation can be saved as text and imported by the script to repsoduce all the detailed simulation graph data as a ready-to-use shape layer.'
+    longDesc: 'This ScriptUI panel for Adobe After Effects was made to help animate circuit simulation voltage graphs. Any voltage over time signal in a SPICE circuit simulation can be saved as text and imported by the script to repsoduce all the detailed simulation graph data as a ready-to-use shape layer.'
 }
 
 export const arbitraryFunctionGen: ProjectInfo = {
