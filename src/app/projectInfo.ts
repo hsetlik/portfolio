@@ -4,6 +4,13 @@ export enum GridViewMode {
     CPP,
     Web
 }
+
+export interface Technology {
+    name: string,
+    infoLink: string,
+}
+
+
 export interface ProjectInfo {
     name: string,
     platform: string,
@@ -14,11 +21,22 @@ export interface ProjectInfo {
     languages: string[],
     // Optional stuff for modal detail component
     image?: string,
-    technologies?: string[],
+    technologies?: Technology[],
     longDesc?: string,
     softwareFeatures?: string[] //list of smart guy stuff,
     video?: string
 }
+
+const aspNet: Technology = { name: 'ASP.NET Core 6.0', infoLink: 'https://docs.microsoft.com/en-us/aspnet/core/?view=aspnetcore-6.0'};
+const reactTech: Technology = {name: 'React', infoLink: 'https://reactjs.org/'};
+const postgres: Technology = {name: 'PostgreSQL', infoLink: 'https://www.postgresql.org/about/'};
+const efCore: Technology = {name: 'Entity Framework', infoLink: 'https://docs.microsoft.com/en-us/ef/'};
+const juce: Technology = {name: 'JUCE Framework', infoLink: 'https://juce.com/'};
+const openGL: Technology = {name: 'OpenGL', infoLink: 'https://www.khronos.org/opengl/'};
+const platformIo: Technology = {name: 'PlatformIO', infoLink: 'https://docs.platformio.org/en/latest/'};
+const arduino: Technology = {name: 'Arduino framework', infoLink: 'https://docs.platformio.org/en/stable/frameworks/arduino.html'};
+const protocols: Technology = {name: 'I2C and SPI protocols', infoLink: 'https://en.wikipedia.org/wiki/Serial_communication#Serial_buses'};
+
 
 const codex: ProjectInfo = {
     name: 'Codex',
@@ -29,7 +47,7 @@ const codex: ProjectInfo = {
     viewMode: GridViewMode.Web,
     languages: ['C#', 'TypeScript'],
     image: '/portfolio/img/web-project-images/codex-screenshot.png',
-    technologies: ['ASP.NET 5.0', 'React', 'PostGreSQL', 'Entity framework'], //TODO: there are a bunch more techs probably
+    technologies: [aspNet, reactTech, postgres, efCore], //TODO: there are a bunch more techs probably
     longDesc: 'Codex is a language learning tool I created out of dissatisfaction with existing language apps. Rather than the usual gamified study system of boring lessons created for teaching, Codex is based on real-world written and video content aimed at native speakers. Codex gives learners the tools to understand a language, including a databse of learned words and phrases and one-click translations of new words.',
     video: 'https://youtu.be/ewWX6Tdu7HM'
 }
@@ -43,7 +61,7 @@ const octane: ProjectInfo = {
     viewMode: GridViewMode.CPP,
     languages: ['C++'],
     image: '/portfolio/img/cpp-project-images/octane-screenshot.png',
-    technologies: ['JUCE framework', 'OpenGL'],
+    technologies: [juce, openGL],
     softwareFeatures: ['High performance anti-aliasing oscillators', 'OpenGL-based wave visualizer', 'Drag-and-drop modulation routing system'],
     longDesc: 'Based around the principle of wavetable synthesis, Octane is a powerful synthesizer plugin which gives users the power to create waveforms based on an audio file. It features four band-limited anti-aliasing wavetable oscillators, four LFOs with user-defined shapes, numerous FIR and FIR filter options, and an intuitive drag-and-drop modulation system to tie it all together.'
 }
@@ -57,7 +75,7 @@ const hex: ProjectInfo = {
     viewMode: GridViewMode.CPP,
     languages: ['C++'],
     image: '/portfolio/img/cpp-project-images/hex-screenshot.png',
-    technologies: ['JUCE framework', 'OpenGL', 'GLSL'],
+    technologies: [juce, openGL],
     longDesc: 'Hex is a six-operator polyphonic FM synthesizer plugin. It features band-limited oscillators with five wave shapes (sine, square, triangle, sawtooth, and white noise), a visual routing editor, a realtime waveform display, and a system to easily save and load preset sounds.',
     softwareFeatures: ['Six anti-aliasing FM Oscillators', 'Custom FM routing algorithms', 'OpenGL-based realtime oscilloscope'],
     video: "https://youtu.be/fvvg2kBd86o"
@@ -72,7 +90,7 @@ const cssScraper: ProjectInfo = {
     viewMode: GridViewMode.Web,
     languages: ['C#'],
     image:'/portfolio/img/web-project-images/css-scraper-screenshot.png',
-    technologies: ['.NET 6', 'C#11']
+    technologies: [aspNet]
 }
 
 //TODO: get nice photo for this
@@ -85,7 +103,7 @@ export const ultra64: ProjectInfo = {
     viewMode: GridViewMode.CPP,
     languages: ['C++'],
     image: '/portfolio/img/cpp-project-images/ultra64-photo.png',
-    technologies: ['PlatformIO', 'Arduino framework', 'SPI and I2C protocols'],
+    technologies: [platformIo, arduino, protocols],
     longDesc: 'The Ultra64 is a musical step sequencer designed for Eurorack modular synthesizers. The brain of the sequencer is an Espressif ESP32 microcontroller with firmware built on the Arduino framework. In addition to the main sequencing logic, the microcontroller is responsible for handling buttons and rotary encoders, driving the WS2812b LEDs and the I2C OLED display, and managing four channels of DAC output. The sequencer features four independent sequence tracks, a system for saving and loading patterns from the ESP32\'s flash storage, and over-the-air firmware update capability.',
     video: 'https://youtu.be/nZWDYzxozPs'
 }
@@ -110,7 +128,7 @@ export const arbitraryFunctionGen: ProjectInfo = {
     viewMode: GridViewMode.CPP,
     languages: ['C++'],
     image: '/portfolio/img/cpp-project-images/function-gen-photo.png',
-    technologies: ['PlatformIO', 'Arduino framework', 'SPI and I2C protocols'],
+    technologies: [platformIo, arduino, protocols],
     longDesc: 'Designed for testing and prototyping analog electronic circuits, this arbitrary function generator outputs an analog voltage based on any waveform. The device is based on an ESP32 microcontroller and features a 0hz to 40Khz output frequency range, variable output impedance, and over-the-air firmware updates.'
 }
 

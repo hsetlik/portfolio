@@ -1,17 +1,22 @@
 import React from 'react'
+import { Technology } from '../../../app/projectInfo'
+
+
 
 interface Props {
-    technologies: string[]
+    technologies: Technology[]
 }
 export default function TechnologiesList({ technologies }: Props) {
     return (
-        <div className='container'>
-            <h5>Technologies:</h5>
+        <div className='col'>
+            <h3 className='mono'>Technologies:</h3>
             <div className='col'>
-                { technologies.map(tech => (
-                    <div className='badge bg-primary' key={tech}>
-                        {tech}
-                    </div>
+                {technologies.map(tech => (
+                    <a href={tech.infoLink}>
+                        <div className='badge bg-primary tech-link' key={tech.name}>
+                            {tech.name}
+                        </div>
+                    </a>
                 ))
                 }
 

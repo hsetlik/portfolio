@@ -47,6 +47,7 @@ a.bg-primary {
 .panel-row {
     flex-direction: row;
     flex-flow: row;
+    justify-content: flex-start;
     /* background-color: chocolate; */
     
 }
@@ -57,6 +58,7 @@ a.bg-primary {
     padding: 1.5em;
     margin-top: 2em;
     margin-bottom: 2em;
+    max-width: 33%;
 }
 
 .proj-panel {

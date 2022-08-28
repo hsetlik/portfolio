@@ -2,7 +2,6 @@ import React from "react";
 import ReactPlayer from "react-player";
 import { getProject } from "../../../app/projectInfo";
 import "../../../styles/modal.css";
-import GithubButton from "../../common/GithubButton";
 import ProjectModalHeader from "./ProjectModalHeader";
 import TechnologiesList from "./TechnologiesList";
 interface Props {
@@ -17,25 +16,28 @@ export default function ProjectModal({ name }: Props) {
             {project && (
                 <div className="container" >
                     <ProjectModalHeader name={name} />
-                    <div className="row">
-                        <div className="col">
-                            {project.technologies && (
-                                <TechnologiesList technologies={project.technologies} />
-                            )}
-                        </div>
-                        <GithubButton name={project.name} />
-                    </div>
-                    <div className='row'>
-                        {project.longDesc && (
-                            <p className="long-desc">{project.longDesc}</p>
+                    <div className="row modal-lower">
+                        { project.technologies && (
+                            <TechnologiesList technologies={project.technologies!} /> 
                         )}
-                    </div>
-                    <div className="row">
+                           {project.longDesc && (
+                             <div className="col">
+                                <h3 className="mono">Details</h3>
+                                <p>{project.longDesc}</p>
+                             </div>
+                           )}
                         {project.video && (
-                            <ReactPlayer url={project.video} />
+                            <div className="col">
+                                <h3 className="mono">Demo Video:</h3>
+                                <div className="player-div">
+                                    <ReactPlayer
+                                    width="100%"
+                                    url={project.video} />
+                                </div>
+                            </div>
                         )}
+                        
                     </div>
-
                 </div>
             )}
         </div>
