@@ -9,9 +9,10 @@ p {
 }
 
 .row {
-   align-items: center;
-   justify-content: flex-start;
+    align-items: center;
+    justify-content: flex-start;
 }
+
 .col {
     justify-content: flex-start;
 
@@ -47,26 +48,40 @@ p {
 }
 
 .frm-logo {
-    height: 3em;
     width: 3em;
 }
 
 .frm-name {
     width: fit-content;
-    margin-right: 1em;
-    align-self: center;
+    padding-right: 0%;
 }
 
 .frm-label {
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    flex-direction: column;
     justify-content: flex-start;
     width: fit-content;
+    max-width: 35%;
     padding: 0.5em;
     border-radius: 0.5em;
     margin: 0.5em;
 }
+
+.frm-lower {
+    font-size: x-small;
+    margin: 0.25ef;
+    position: relative;
+    padding: 0.5em;
+}
+
+.frm-desc {
+    flex-wrap: wrap;
+    padding: 0%;
+    margin: 1em;
+    
+}
+
+
 /* ================================= */
 
 .tool-panel {
