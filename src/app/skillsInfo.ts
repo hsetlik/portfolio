@@ -49,9 +49,9 @@ export const frameworks: Framework[] = [
 
 export interface Tool {
     name: string,
-    desc?: string,
-    image?: string,
-    infoLink?: string
+    desc: string,
+    image: string,
+    infoLink: string
 }
 
 export const tools: Tool[] = [
@@ -74,7 +74,7 @@ export const tools: Tool[] = [
         infoLink: 'https://platformio.org/'
     },
     {
-        name: 'node.js / npm',
+        name: 'node.js/npm',
         desc: 'Ubiquitous JavaScript runtime',
         image: '/portfolio/img/tool-logos/npm_logo.svg',
         infoLink: 'https://nodejs.org/en/'
@@ -94,6 +94,7 @@ export const tools: Tool[] = [
     {
         name: 'Linux / shell scripting',
         image: '/portfolio/img/tool-logos/linux_logo.svg',
+        desc: 'Command line and shell scripts for Unix-like operating systems',
         infoLink: 'https://www.linux.org/'
     }
 ]

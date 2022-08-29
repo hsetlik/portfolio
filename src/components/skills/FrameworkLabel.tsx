@@ -17,11 +17,13 @@ export default function FrameworkLabel({ framework }: Props) {
                 )}
             </div>
             {hovering && (
-                <a href={framework.infoLink}>
+                <div className='bg-primary frm-link-container '>
+                    <a href={framework.infoLink}>
                     <div className='row frm-lower'>
                         <p className='frm-desc'>{framework.desc}</p>
                     </div>
                 </a>
+                </div>
             )}
         </div>
     )

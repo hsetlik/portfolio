@@ -12,17 +12,15 @@ export default function SkillsRoute() {
 //    const loc = useLocation();
 //    console.log(`Skills route initialized at: ${loc.pathname}`);
     return (
-        <div className="container">
-            <SkillsHeader />
-            <div className="row">
-                <div className="col">
-                    <LanguagesRow />
-                    <ToolsRow />
-                </div>
-                <div className="col">
-                    <FrameworksRow />
-                </div>
-            </div>
+        <div className="skills-route">
+            <div className="col skill-col">
+                <SkillsHeader />
+                <FrameworksRow />    
+            </div> 
+            <div className="col skill-col">
+                <LanguagesRow />
+                <ToolsRow />
+            </div> 
         </div>
     )
 }

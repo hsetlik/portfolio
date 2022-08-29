@@ -1,3 +1,21 @@
+.skill-col {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em;
+    width: fit-content;
+}
+
+.skills-header {
+    width: fit-content;
+    border-radius: 0.5em;
+}
+
+.skills-route {
+    display: flex;
+    flex-direction: row;
+    justify-items: flex-start;
+}
+/* ====================================================== */
 h1 {
     margin: 0.25em;
     padding: 0.1em;
@@ -6,16 +24,6 @@ h1 {
 p {
     width: fit-content;
     padding: 0em;
-}
-
-.row {
-    align-items: center;
-    justify-content: flex-start;
-}
-
-.col {
-    justify-content: flex-start;
-
 }
 
 .lang-col {
@@ -45,15 +53,17 @@ p {
     margin: 0.5em;
     border-radius: 1em;
     color: white;
+    width: fit-content;
 }
 
 .frm-logo {
-    width: 3em;
+    width: 4em;
 }
 
 .frm-name {
     width: fit-content;
     padding-right: 0%;
+    font-size: large;
 }
 
 .frm-label {
@@ -61,7 +71,7 @@ p {
     flex-direction: column;
     justify-content: flex-start;
     width: fit-content;
-    max-width: 35%;
+    max-width: 85%;
     padding: 0.5em;
     border-radius: 0.5em;
     margin: 0.5em;
@@ -72,16 +82,26 @@ p {
     margin: 0.25ef;
     position: relative;
     padding: 0.5em;
+    width: fit-content;
 }
 
 .frm-desc {
     flex-wrap: wrap;
-    padding: 0%;
-    margin: 1em;
-    
+    padding: 0.25em;
+    margin: 0.125em;
+    color: var(--bs-dark);
 }
 
+.frm-desc:hover {
+    color: var(--bs-blue);
+}
 
+.frm-link-container {
+    margin: 0.25em;
+    padding: 0.5em;
+    border-radius: 0.375em;
+    width: fit-content;
+}
 /* ================================= */
 
 .tool-panel {
@@ -91,13 +111,7 @@ p {
 
 .tool-logo {
     height: 3em;
-    width: 3em;
 }
-
-.tool-row {
-    padding: 1em;
-}
-
 .tool-label {
     margin: 0.5em;
     padding: 0.5em;
@@ -112,4 +126,16 @@ p {
 .fit-row {
     width: fit-content;
     vertical-align: middle;
+}
+
+.tool-desc {
+    padding: 0%;
+    margin: 0.25em;
+    font-size: small; 
+}
+
+.tool-link {
+    background-color: var(--bs-dark);
+    padding: 0.5em;
+    border-radius: 0.375em;
 }
